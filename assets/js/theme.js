@@ -36,7 +36,7 @@ $('.primary-menu ul.navbar-nav .dropdown-menu').each(function() {
 		var menu = $('#header .container-fluid').offset();
 		var dropdown = $(this).parent().offset();
 
-		var i = (dropdown.left + $(this).outerWidth()) - (menu.left + $('#header .container-fluid').outerWidth());
+		var i = (dropdown.right + $(this).outerWidth()) - (menu.right + $('#header .container-fluid').outerWidth());
 
 		if (i > 0) {
 			$(this).css('margin-left', '-' + (i + 5) + 'px');
@@ -47,10 +47,10 @@ $(function () {
 		if ($(window).width() > 991) {
             var elm = $('.dropdown-menu', this);
             var off = elm.offset();
-            var l = off.left;
+            var r = off.right;
             var w = elm.width();
             var docW = $(window).width();
-            var isEntirelyVisible = (l + w + 30 <= docW);
+            var isEntirelyVisible = (r + w + 30 <= docW);
             if (!isEntirelyVisible) {
                 $(elm).addClass('dropdown-menu-right');
             } else {

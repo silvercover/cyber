@@ -35,6 +35,17 @@
 /* =================================== */
 /*  1. Basic Style 
 /* =================================== */
+@font-face {
+  font-family: Vazirmatn Black;
+  src: url(/assets/fonts/vazirmatn/Vazirmatn-Black.woff2);
+
+  font-family: Vazirmatn Regular;
+  src: url(/assets/fonts/vazirmatn/Vazirmatn-Regular.woff2);  
+
+  font-family: Vazirmatn Light;
+  src: url(/assets/fonts/vazirmatn/Vazirmatn-Light.woff2);   
+}
+
 body, html {
   height: 100%;
 }
@@ -42,6 +53,7 @@ body, html {
 body {
   background: #dddddd;
   color: #4c4d4d;
+  font-family: "Vazirmatn Regular";
 }
 
 /*-------- Preloader --------*/
@@ -187,15 +199,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #252b33;
   line-height: 1.5;
   margin: 0 0 1.5rem 0;
-  font-family: Roboto, sans-serif;
+  font-family: "Vazirmatn Black",Roboto, sans-serif;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 dl, ol, ul, pre, blockquote, .table {
@@ -641,10 +653,10 @@ hr {
 .idocs-navigation {
   position: fixed;
   top: 70px;
-  left: 0;
-  overflow: hidden;
+  right: 0;
+  overflow: hidden !important;
   overflow-y: auto;
-  width: 260px;
+  width: 280px;
   height: calc(100% - 70px);
   z-index: 1;
   border-right: 1px solid rgba(0, 0, 0, 0.05);
@@ -675,7 +687,7 @@ hr {
 .idocs-navigation .nav .nav .nav-item .nav-link:after {
   content: "";
   position: absolute;
-  left: 30px;
+  right: 20px;
   height: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.12);
   width: 1px;
@@ -691,8 +703,10 @@ hr {
 .idocs-navigation .nav .nav .nav-link {
   color: #6a6a6a;
   padding: 4px 30px 4px 45px;
-  font-size: 15px;
+  font-size: 13px;
+  font-family: "Vazirmatn Light";
   text-transform: none;
+  font-weight: normal;
 }
 .idocs-navigation .nav .nav .nav .nav-link {
   padding: 4px 30px 4px 60px;
@@ -705,14 +719,14 @@ hr {
   position: absolute;
   content: " ";
   top: 50%;
-  right: 18px;
+  left: 14px;
   border-color: #000;
   border-top: 2px solid;
   border-right: 2px solid;
   width: 7px;
   height: 7px;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(225deg);
+  transform: translate(-50%, -50%) rotate(225deg);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -732,7 +746,7 @@ hr {
 /*=== 3.2 Docs Content ===*/
 .idocs-content {
   position: relative;
-  margin-left: 260px;
+  margin-right: 260px;
   padding: 0px 50px 50px;
   min-height: 750px;
   transition: all 0.3s;
@@ -746,14 +760,14 @@ hr {
 
 @media (max-width: 767.98px) {
   .idocs-navigation {
-    margin-left: -260px;
+    margin-right: -290px;
   }
   .idocs-navigation.active {
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .idocs-content {
-    margin-left: 0px;
+    margin-right: 0px;
     padding: 0px;
   }
 }
@@ -1106,7 +1120,7 @@ hr {
   background: #3c3636;
   border-radius: 2px;
   opacity: 1;
-  left: 0;
+  right: 0;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: 0.25s ease-in-out;

@@ -705,9 +705,9 @@ hr {
   color: #6a6a6a;
   padding: 4px 30px 4px 45px;
   font-size: 13px;
-  font-family: "Vazirmatn Light";
+  font-family: "Vazirmatn";
   text-transform: none;
-  font-weight: normal;
+  font-weight: 200;
 }
 .idocs-navigation .nav .nav .nav .nav-link {
   padding: 4px 30px 4px 60px;

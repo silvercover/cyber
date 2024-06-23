@@ -37,13 +37,13 @@
 /* =================================== */
 @font-face {
   font-family: Vazirmatn Black;
-  src: url(/assets/fonts/vazirmatn/Vazirmatn-Black.woff2);
+  src: url(https://github.com/silvercover/cyber/blob/main/assets/fonts/vazirmatn/Vazirmatn-Black.woff2);
 
   font-family: Vazirmatn Regular;
-  src: url(/assets/fonts/vazirmatn/Vazirmatn-Regular.woff2);  
+  src: url(https://github.com/silvercover/cyber/blob/main/assets/fonts/vazirmatn/Vazirmatn-Regular.woff2);  
 
   font-family: Vazirmatn Light;
-  src: url(/assets/fonts/vazirmatn/Vazirmatn-Light.woff2);   
+  src: url(https://github.com/silvercover/cyber/blob/main/assets/fonts/vazirmatn/Vazirmatn-Light.woff2);   
 }
 
 body, html {

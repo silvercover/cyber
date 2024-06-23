@@ -53,7 +53,7 @@ body, html {
 body {
   background: #dddddd;
   color: #4c4d4d;
-  font-family: "Vazirmatn Regular";
+  font-family: "Vazirmatn";
 }
 
 /*-------- Preloader --------*/
@@ -199,7 +199,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #252b33;
   line-height: 1.5;
   margin: 0 0 1.5rem 0;
-  font-family: "Vazirmatn Black",Roboto, sans-serif;
+  font-family: "Vazirmatn",Roboto, sans-serif;
+  font-weight: bold;
 }
 
 h1 {

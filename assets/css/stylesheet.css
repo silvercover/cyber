@@ -1764,12 +1764,13 @@ hr {
   background: none;
 }
 .accordion .card-header a {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: normal;
   padding: 1rem 1.25rem 1rem 2.25rem;
   display: block;
   border-radius: 4px;
   position: relative;
+  text-decoration: none;
 }
 .accordion .card-header a:hover {
   text-decoration: none;
@@ -1809,6 +1810,7 @@ hr {
 }
 .accordion .card-body {
   line-height: 26px;
+  font-size: 13px;
 }
 .accordion.arrow-right .card-header a {
   padding-left: 1.25rem;

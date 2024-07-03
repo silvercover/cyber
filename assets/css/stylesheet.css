@@ -45,9 +45,6 @@ body {
   color: #4c4d4d;
   font-family: "Vazirmatn";
 }
-.disqus_thread {
-  font-family: "Vazirmatn" !important;
-}
 
 /*-------- Preloader --------*/
 .preloader {

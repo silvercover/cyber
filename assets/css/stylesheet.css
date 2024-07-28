@@ -657,6 +657,9 @@ hr {
   border-right: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s;
 }
+.idocs-navigation-ltr {
+  left: 0;
+}
 .idocs-navigation > .nav {
   padding: 30px 0;
 }
@@ -745,6 +748,11 @@ hr {
   padding: 0px 50px 50px;
   min-height: 750px;
   transition: all 0.3s;
+}
+.idocs-content-ltr {
+  margin-left: 260px;
+  margin-right: 0;
+  padding: 0px 50px 50px;
 }
 .idocs-content section:first-child {
   padding-top: 3rem;

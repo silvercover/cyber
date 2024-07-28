@@ -1,0 +1,2516 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTERGEZMX2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YTERGEZMX2');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <title>Cyber Concepts for Everyone: Essentials of Networks, Internet, and Cybersecurity</title>
+  <meta name="description" content="A Quick Guide to Networking and Cyber Concepts in Plain Language">
+  <meta name="google-site-verification" content="DcixTqq9L9b_6ESfL3DsuLMBONDNFfsXEUXD3XxTQnM" />
+
+  <!-- Stylesheet
+============================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/highlight.js/styles/github.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+          <small>Table of Contents</small>
+          <!-- Logo 
+          <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="../assets/images/logo.png"
+              alt="iDocs Template" /> </a>
+          <span class="text-2 ml-2">v1.0</span>
+           Logo End -->
+
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#header-nav"><span></span><span></span><span></span></button>
+
+          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li><a target="_blank"
+                  href="https://github.com/silvercover/cyber?tab=readme-ov-file#%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%D8%AF%D8%B1-%D8%A8%D9%87%D8%A8%D9%88%D8%AF-%D8%A7%DB%8C%D9%86-%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7">Contribution
+                </a></li>
+              <!--<li><a target="_blank" href="">دانلود پاورپوینت</a></li>-->
+            </ul>
+          </div>
+          <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+            <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.x.com/silvercover/"
+                target="_blank" title="" data-original-title="شبکه اجتماعی X"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="idocs-navigation idocs-navigation-ltr bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link" href="#chapter_01">مبانی شبکه</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ch1_01">شبکه چیست؟</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_05">شبکه محلی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_10">شبکه گسترده</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_15">پروتُکُل یا شیوه نامه</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_20">پروتُکُل اینترنت</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_25">وب</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_30">آدرس آی پی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_35">آی‌پی ایستا - آی‌پی پویا</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_40">آی‌پی نسخه 6</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_45">پورت یا درگاه </a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_46">پهنای باند و سرعت اینترنت</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_50">کارت شبکه و مَک‌آدرس</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_55">سرور</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_60">دی‌ان‌اس</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_65">دامین اینترنتی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch1_70">فضای میزبانی یا هاست</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#chapter_02">مفاهیم امنیتی پرکاربرد</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ch2_01">بد افزار</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_05">ویروس</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_10">کِرم</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_15">اسب تِروآ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_20">درِ پُشتی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_25">حمله سایبری</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_30">باج افزار</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_35">جفنگ یا اسپم یا هرزنامه</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_40">مهندسی اجتماعی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_45">تله‌گذاری یا فیشینگ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_50">آسیب پذیری</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_55">رمزگذاری</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_60">رمزنگاری کلید عمومی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_65">رمزگذاری سرتاسر</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_70">کی‌لاگر</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_75">جستجوی فراگیر</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_80">تصدیق هویت چندعاملی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_85">حمله محروم‌سازی از سرویس</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_90">بات نت</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_95">نفوذ و تغییر ظاهر سایت</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_100">کوکی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch2_105">مجوزها در برنامه های موبایلی</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#chapter_03">ذهنیت مهاجمین و هکرها</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ch3_01">دسته‌بندی هکرها</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch3_02">صفات عمده هکرها</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch3_03">انگیزه‌های هکرها</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#chapter_04">وبگردی و ردپای دیجیتال</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ch4_01">ردپای دیجیتال</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch4_02">وب پنهان</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch4_03">وب تاریک</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch4_04">وب اسکرپینگ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch4_05">اَدِلّه الکترونیکی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch4_06">قابلیت جعل ادله الکترونیک</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#chapter_05">بلاکچین، رمزارز و فناوری مالی</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ch5_01">فین‌تک یا فناوری مالی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch5_05">مثال‌هایی از فین‌تک</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch5_10">بلاکچین یا زنجیره بلوکی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch5_15">رمزارز</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch5_20">کیف پول دیجیتال</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch5_25">توکن</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch5_30">جرائم مرتبط با رمز ارزها</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch5_35">صرافی رمزارز</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch5_40">استخراج رمزارز</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#chapter_06">روال‌های کسب و کارهای اینترنتی</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ch6_01">پلتفرم یا سکو</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_02">مارکت پِلِیس</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_03">تفاوت مارکت پِلِیس با پلتفرم</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_04">تواقنامه استفاده</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_05">نماد اعتماد</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_06">نهادهای صنفی</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_07">درگاه پرداخت</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_08">درگاه پرداخت و نماد اعتماد</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_09">شکایت از کسب و کار اینترنتی در ایران</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_10">حق رجوع , مرجوع نمودن کالا</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_11">شبکه شاپرک</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ch6_12">سیکل تسویه حساب برای پذیرندگان</a></li>
+            </ul>
+          </li>
+          <!--<li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li>-->
+        </ul>
+      </div>
+
+      <!-- Docs Content
+	============================ -->
+      <div class="idocs-content idocs-content-ltr">
+        <div class="container">
+
+          <section id="chapter_01">
+            <h1>Cyber Concepts for Everyone</h1>
+            <h2>Essentials of Networks, Internet, and Cybersecurity</h2>
+            <p>
+              This online guide is designed to introduce you to the fundamental concepts of networking, the internet,
+              and cybersecurity. It is specifically tailored for individuals with no prior background or experience in
+              information technology
+            </p>
+            <p>
+              The key advantage of this guide is its ability to provide a comprehensive overview, presenting
+              interconnected concepts in a logical sequence that builds upon one another
+            </p>
+            <p>To provide feedback, ask questions, or make suggestions, please use the feedback form at the bottom of
+              this guide or email me.</p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>Version:</strong> 1.0</li>
+                  <li><strong>Author:</strong> <a href="https://www.linkedin.com/in/silvercover" target="_blank">Hamed
+                      Takmil</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong class="font-weight-700">Pub Date:</strong></li>
+                  <li><strong>Update:</strong></li>
+                </ul>
+              </div>
+            </div>
+
+          </section>
+
+          <hr class="divider">
+
+          <!-- Begin Chapter 1
+		  ============================ -->
+          <section id="ch1_01">
+            <h2>What is Network?</h2>
+            <p>Connecting two or more devices, such as computers, laptops, and smartphones, for the purpose of sending
+              and receiving data. Data transmission can be achieved through various means, including multimedia cables,
+              fiber optic cables, or wireless connections.
+
+            </p>
+            <p>
+              The internet is a global network interconnected by millions of smaller networks, facilitating worldwide
+              communication and data exchange.
+              <br>
+              <strong>The internet is a network of networks.</strong>
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="ch1_05">
+            <h2>Local Area Network (LAN)</h2>
+            <p>A computer network that spans a small geographic area, such as a home, office, or group of adjacent
+              buildings</p>
+            <p>
+              A common example is the wireless (Wi-Fi) connection between your laptop, smartphone, and home router..
+            </p>
+            <img src="../assets/images/lan-artwork.png" class="img-fluid" alt="تصویر شماتیک شبکه محلی">
+
+            <div class="alert alert-info" role="alert">
+              <small>
+                Wireless networks like Wi-Fi let devices connect to the internet or each other without cables. Wi-Fi
+                uses radio waves to provide wireless internet access in homes, offices, and public places.
+              </small>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <section id="ch1_10">
+            <h2>Wide Area Network (WAN)</h2>
+            <p>A network covering a wide geographic area, like between countries or continents. It often uses public
+              telecommunication services.
+            </p>
+            <p>
+              Simple examples of wide area networks (WAN):
+            <ul>
+              <li>
+                <b>Banking Network:</b> ATMs, POS terminals, and bank branches are linked by a WAN for real-time
+                transaction processing.
+              </li>
+              <li>
+                <b>Corporate Network:</b> Company Network: A WAN connects the company's offices across different cities,
+                allowing employees to share files, communicate, and access shared resources.
+              </li>
+              <li>
+                <b>Educational Network:</b> Schools and universities within a region or country are connected to a WAN
+                to provide students with access to online educational resources and enable them to communicate with each
+                other.
+              </li>
+              <li>
+                <b>Government Network (Intranet):</b> A WAN links government offices at different levels, enabling data
+                sharing and cooperation.
+              </li>
+            </ul>
+            <img src="../assets/images/wan-network.png" class="img-fluid" alt="تصویر شماتیک شبکه گسترده یا WAN">
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="ch1_15">
+            <h2>Protocol</h2>
+            <p>
+              In the digital realm, diverse devices and applications require a <b>common language</b> to interact and
+              exchange data. This shared language is known as a protocol, which outlines the procedures for data
+              exchange. In simpler terms, a protocol is a set of rules governing the establishment and maintenance of
+              communication in computer networks.</p>
+
+            <div class="alert alert-info" role="alert">
+              <small>
+                Given the widespread use of protocols for different networking functions like email, having a basic
+                understanding of what a protocol is is essential.
+              </small>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <section id="ch1_20">
+            <h2>Internet Protocol - IP</h2>
+            <p>The Internet is a network of networks comprising private, public, academic, commercial, and government
+              networks, ranging from local to global scales. The Internet Protocol (IP) defines the procedures for data
+              exchange and constitutes a set of rules for establishing and maintaining communication within computer
+              networks.
+            </p>
+            <p>
+              The development of the TCP/IP protocol was a collaborative effort spanning decades, involving numerous
+              individuals and organizations. To facilitate this endeavor, global organizations and consortiums such as
+              the IETF and ICANN were established, working in conjunction with academic institutions to develop and
+              promote relevant standards..
+            </p>
+
+            <hr class="divider">
+
+            <section id="ch1_25">
+              <h2>Web - WWW</h2>
+              <p>The World Wide Web, commonly known as the Web, is an interconnected collection of web pages accessible
+                through the internet. These pages (such as websites like Amazon.com) are viewed using web browsers like
+                Chrome or Firefox. <b>The Web is a part of the internet</b>
+              </p>
+              <p>
+                Imagine a vast library with shelves reaching up to the ceiling, filled with books. This library is
+                analogous to the Web, and each book represents a web page.
+              <p></p>
+              Within this library:
+              <p></p>
+              <b>Books:</b> books cover various subjects like science, history, literature, and entertainment (content
+              on
+              the Web is presented in diverse topics)<br>
+              <b>Shelves:</b> categorize these books into different subjects (websites organize content into specific
+              categories)<br>
+              <b>Map:</b> helps you locate the book you're looking for (search engines help you find specific web pages)
+              </p>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  The word 'Web' itself means a spider's web. The term 'World Wide Web' is derived from this analogy due
+                  to the structure of the web resembling a spider's web. Millions of interconnected pages, linked
+                  together, evoke the image of a spider's web.
+                </small>
+              </div>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  Web3, also known as the decentralized web or AI-powered web, represents the next evolution of the
+                  internet, built upon <a href="#ch5_10">blockchain technology</a>, artificial intelligence, and
+                  decentralization principles. Unlike Web2 where data and services are controlled by tech giants like
+                  Google, Facebook, and Amazon, Web3 distributes data and services across a decentralized network,
+                  eliminating the need for a central authority.
+                  <br>
+                  <br>
+                  In Web2, users do not own their data, which is often exploited by tech companies for targeted
+                  advertising. In contrast, Web3 empowers users with data ownership, allowing them to control how their
+                  data is used.
+                  <br>
+                  <br>
+                  Additionally, while Web2 data is stored on centralized servers, vulnerable to hacks and data breaches,
+                  Web3 stores data across a distributed network, making it significantly more resistant to tampering.
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_30">
+              <h2>IP Address</h2>
+              <p>An IP address is a numerical label assigned to each device connected to a computer network that uses
+                the TCP/IP protocol. It's akin to a postal code for each house.
+              </p>
+              <p>
+                This address serves as a unique identifier, enabling other devices on the network to locate and
+                communicate with the specific device. IP addresses consist of numbers (e.g., 192.168.1.100) and each
+                device has a distinct IP address.
+                <br>
+                <br>
+                There are two primary types of IP addresses:
+                <br>
+                <b>Public IP Address:</b> This address identifies your device on the public internet and is used to
+                communicate with devices on other networks. <br>
+                <b>Private IP Address:</b> This address identifies your device within a local network (such as a home or
+                office network) and is used for communication between devices on that specific network.
+              </p>
+              <img src="../assets/images/ipv4.png" class="img-fluid"
+                alt="Representation of an IPv4 address based on its structure and bit count">
+              <p>
+                "An IPv4 address is made up of four numbers, each between 0 and 255, separated by dots. It offers 4.3
+                billion unique addresses, which is becoming insufficient. IPv6 is the newer, larger address space, but
+                IPv4 remains common.
+              </p>
+              <div class="accordion" id="accordionDefault">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">Who assigns IP addresses to devices, and what
+                        is the process?</a> </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionDefault">
+                    <div class="card-body">
+                      There are two primary types of IP addresses:
+                      <br>
+                      <b>Public IP Address:</b> This is analogous to your home's postal address on the internet. Your
+                      Internet Service Provider (ISP) assigns this address to you. ISPs possess a pool of IP addresses
+                      and allocate one based on availability. This address can be either static (permanent) or dynamic
+                      (temporary).
+                      <br>
+                      IP address ranges are allocated to countries by governing bodies, and ISPs within each country are
+                      assigned specific ranges by their national regulatory authorities.<br>
+
+                      <b>Private IP Address:</b> Comparable to your apartment unit number, this address is assigned by
+                      your router or modem to each device connected to your network. .
+                      <br>
+                      Most routers utilize DHCP (Dynamic Host Configuration Protocol) to automate this process. When a
+                      device joins your network, it requests an IP address from the DHCP server, and the router
+                      allocates a unique address from the designated IP address range for your network.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_35">
+              <h2>Static IP - Dynamic IP</h2>
+              <p>A dynamic IP address changes each time a device connects to a network, whether it's a local network or
+                the internet. A static IP address, on the other hand, remains constant. For instance, your IP address
+                often changes when you reboot your modem.
+              </p>
+              <p>
+                Static IP addresses are necessary for remote access to control
+                panels or management interfaces of devices like surveillance cameras.
+                Dynamic IP addresses are typically used by home users who have occasional internet connections.
+                Static IP addresses are commonly used by businesses, servers, and devices that require constant and
+                stable internet access. Using a static IP address usually involves an additional fee from your Internet
+                Service Provider (ISP).
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_40">
+              <h2>آی‌پی نسخه 6 - IP v6</h2>
+              <p>IPv4 از فضای آدرسی ۳۲ بیتی (به عنوان مثال 192.168.1.100) استفاده می‌کند. این فضا اجازهٔ آدرس‌دهی حدود ۴
+                میلیارد آدرس در اینترنت را
+                می‌دهد. با توجه به این‌که امروزه بسیاری از دستگاه‌ها افزون بر کامپیوترها مانند موبایل‌ها، دوربین‌ها و
+                حتی لوازم خانگی و قاب عکس‌های دیجیتال به اینترنت متصل می‌شوند، این فضا رو به اتمام است. IP وژن 5 نداریم
+                چون تعداد آدرس های حاصل از آن کافی نیست.
+              </p>
+              <p>
+                IPv6 از آدرس‌های 128 بیتی استفاده می‌کند که این امر تعداد آدرس‌های قابل دسترس را به طور چشمگیری افزایش
+                می‌دهد و مشکل کمبود آدرسIP را حل می‌کند.
+              </p>
+              <p>
+                نمونه آدرس آی پی نسخه 6 (IPv6):
+                <code class="html hljs xml">2a00:1db9:85a3:0000:0000:8a2e:0370:7334</code>
+                <br>
+                این آدرس آی پی نسخه 6 از 8 بخش 16 بیتی تشکیل شده است. هر بخش با دو نقطه (:) از بخش‌های دیگر جدا می‌شود.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_45">
+              <h2>پورت یا درگاه - Port</h2>
+              <p>پورت در شبکه مثل یک درب است که اطلاعات از طریق آن وارد یا خارج می‌شوند. هر درب شماره‌ای دارد و هر
+                برنامه یا خدمت از یک درب خاص استفاده می‌کند تا اطلاعات درست به جای درست برود.
+                وقتی شما در مرورگر وب خود، آدرس یک وب سایت را وارد می‌کنید، کامپیوتر شما از پورت 80 برای برقراری ارتباط
+                با سرور وب سایت استفاده می‌کند. با آدرس آی پی (مثل کد پستی) به کامپیوتر مقصد متصل می‌شویم، سپس با دادن
+                شماره پورت باعث اجرای نرم افزاری خاص بر روی آن سیستم مقصد می شویم.
+              </p>
+              <p>
+                سیستم فیلترینگ یا هر نوع سیستم پالایش ترافیک می‌تواند دسترسی به پورت خاصی را مسدود یا محدود کند و بدین
+                ترتیب مانع از اجرای نرم افزارهایی خاص شود.
+              </p>
+              <p>
+                در تصویر زیر مفهوم پورت در ارتباط دو گوشی از طریق اپلیکیشن SHAREiT به تصویر کشیده شده است. در نوشتارهای
+                فنی آی‌پی و پورت با دو نقطه از هم جدا
+                نوشته می شود.
+              </p>
+              <img src="../assets/images/port.png" class="img-fluid" alt="نمایش مفهوم پورت در شبکه">
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_46">
+              <h2>پهنای باند (Band Width) و سرعت اینترنت</h2>
+              <p>پهنای باند و سرعت اینترنت اگرچه مرتبط هستند، اما دو مفهوم متفاوت‌اند.
+                <br>
+                پهنای باند: حداکثر مقدار داده‌ای که می‌تواند در یک زمان مشخص منتقل شود. مثل عرض یک لوله آب یا خیابان.
+                <br>
+                سرعت اینترنت: سرعت واقعی انتقال داده‌ها در یک لحظه خاص. مثل سرعت جریان آب در لوله.
+                <br>
+                پهنای باند بالاتر امکان سرعت بیشتر را فراهم می‌کند، اما عوامل دیگری نیز بر سرعت واقعی تأثیر می‌گذارند.
+              </p>
+              <p>
+                وقتی که شما یک سرویس اشتراک اینترنت با سرعت 4 مگابیت بر ثانیه تهیه می‌کنید، نهایتاً در حین استفاده در هر
+                لحظه حداکثر با سرعت 4Mb می توانید فایلی را دانلود کنید. در طول مدت استفاده این سرعت نوسان دارد و ممکن
+                است
+                بسته به بار شبکه کمتر شود.
+              </p>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  در سرویس های اینترنتی که خریداری می‌کنید، سرعت دانلود و آپلود یکسان نیستند و سرعت دانلود به طور قابل
+                  توجهی بیشتر از سرعت آپلود است. به این معنی که بخش اعظم پهنای باند برای دانلود (دریافت اطلاعات از
+                  اینترنت) اختصاص داده می شود و سهم کمتری به آپلود (ارسال اطلاعات به اینترنت) تعلق می گیرد. اکثر کاربران
+                  اینترنت، بیشتر از آپلود، به دانلود اطلاعات نیاز دارند. به عنوان مثال، تماشای فیلم، دانلود فایل، وبگردی
+                  و ... همگی جزو فعالیت های دانلود محسوب می شوند. در مقابل، آپلود معمولاً برای ارسال ایمیل، اشتراک گذاری
+                  فایل های کوچک و یا آپلود عکس در شبکه های اجتماعی استفاده می شود.
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_50">
+              <h2> کارت شبکه و مَک‌آدرس یا آدرس فیزیکی - MAC Address </h2>
+
+              <p>
+                کارت شبکه، که به آن NIC ( مخفف Network Interface Card) نیز می‌گویند، یک قطعه سخت‌افزاری است که به شما
+                امکان می‌دهد کامپیوتر یا گوشی خود را به شبکه (یا اینترنت) متصل کنید. دو نوع کارت شبکه عمده وجود دارد، بی
+                سیم و باسیم که در سایزهای مختلف برای کامپیوتر، موبایل و سایر دستگاه های قابل اتصال به شبکه عرضه می‌شود.
+              </p>
+              <p>مک آدرس نشانی عددی است که به صورت سخت‌افزاری در کارت واسط شبکه در کارخانه حک شده‌است. این نوع آدرس‌دهی
+                موجب شناسایی منحصر به فرد کارت واسط شبکه در بین کارت‌ها می‌شود.
+              </p>
+              <p>نمونه مک آدرس:</p>
+              <code class="html hljs xml">
+				01:23:45:67:89:ab<br>
+				01-23-45-67-89-ab
+			  </code>
+              <img src="../assets/images/mc-address.png" class="img-fluid mx-auto" alt="نمونه مک آدرس روی یک کارت شبکه">
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  کارت شبکه، آدرس IP کامپیوتر یا موبایل شما را مدیریت می‌کند و به آن اجازه می‌دهد تا با سایر دستگاه‌های
+                  شبکه ارتباط برقرار کند. در برخی موارد مک آدرس شما به همراه سایر اطلاعات مثل آدرس IP جهت شناسایی
+                  استفاده می‌شود.
+                </small>
+              </div>
+
+              <div class="accordion" id="accordion_ch1_50_01">
+                <div class="card">
+                  <div class="card-header" id="heading_ch1_50_01">
+                    <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse"
+                        data-target="#collapse_ch1_50_01" aria-expanded="false" aria-controls="collapse_ch1_50_01">مک
+                        آدرس را چطور پیدا کنم؟</a> </h5>
+                  </div>
+                  <div id="collapse_ch1_50_01" class="collapse" aria-labelledby="heading_ch1_50_01"
+                    data-parent="#accordionDefault">
+                    <div class="card-body">
+                      با نگاه کردن به برد کارت شبکه یا از طریق نرم افزار می‌توان آن را پیدا کرد. <br>
+                      <b>در سیستم عامل ویندوز:</b><br>
+                      در نوار جستجوی ویندوز، "cmd" را تایپ کنید.<br>
+                      در نتایج جستجو، بر روی "Command Prompt" کلیک راست کنید و "Run as administrator" را انتخاب
+                      کنید.<br>
+                      در خط فرمان، دستور <code>ipconfig /all</code> را تایپ کنید و Enter را فشار دهید.<br>
+                      آدرس مک شما در کنار عبارت "Physical Address" یا "Ethernet Address" لیست خواهد شد.<br>
+                      <b>در اندروید</b><br>
+                      از طریق رفتن به بخش تنظیمات (Settings) و گزینه درباره گوشی (About Phone) و یافتن عبارت مد نظر از
+                      فهرست موارد نمایشی.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_55">
+              <h2>سِروِر - Server</h2>
+              <p>
+                فرض کنید به رستوران می‌روید. شما به عنوان مشتری، سفارش خود را به گارسون می‌دهید. گارسون سفارش شما را به
+                آشپزخانه می‌برد و پس از آماده شدن، غذا را به شما تحویل می‌دهد.
+
+                در دنیای دیجیتال هم، سرور نقشی مشابه گارسون را دارد. سرورها کامپیوترهای قدرتمندی هستند که در شبکه‌های
+                کامپیوتری قرار دارند و وظیفه‌شان ارائه خدمات به سایر کامپیوترها و دستگاه‌ها است.
+              </p>
+              <p>
+                مثال:
+                <br>
+                وقتی شما در مرورگر وب خود، آدرس یک وب سایت را وارد می‌کنید، کامپیوتر شما درخواستی را به سرور <a
+                  href="#ch1_25">وب</a> سایت
+                ارسال می‌کند. سرور وب سایت، محتوای مورد نظر شما را از پایگاه داده خود پیدا می‌کند و آن را به کامپیوتر
+                شما ارسال می‌کند. در این مثال، سرور وب سایت مانند گارسونی عمل می‌کند که غذای شما را از آشپزخانه (پایگاه
+                داده) به شما (کامپیوتر) تحویل می‌دهد.
+              </p>
+              <p>
+                انواع سرور:
+                <br>
+                <b>سرور وب:</b> برای میزبانی از وب سایت ها و ارائه آنها به کاربران در اینترنت استفاده می شود.<br>
+                <b>سرور ایمیل:</b> برای ارسال و دریافت ایمیل استفاده می شود.<br>
+                <b>سرور پایگاه داده:</b> برای ذخیره و مدیریت داده ها استفاده می شود.<br>
+                <b>سرور فایل:</b> برای ذخیره و به اشتراک گذاری فایل ها استفاده می شود.<br>
+                <b>سرور چاپ:</b> برای مدیریت و کنترل چاپگرها استفاده می شود.
+              </p>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  یکی از دلایل شایع برای زمانی که در ادارات و بانک‌ها باعث می‌شود به شما بگویند سیستم قطع است این است که
+                  سیستم های آن اداره نمی‌توانند به سرور مد نظر متصل شوند.
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_60">
+              <h2>دفترچه تلفن اینترنت یا DNS - Domain Name System</h2>
+              <p>
+                فرض کنید می‌خواهید با دوستتان که در شهر دیگری زندگی می‌کند تماس بگیرید. برای این کار، به دفترچه تلفن خود
+                مراجعه می‌کنید و شماره تلفن او را پیدا می‌کنید.
+
+                در دنیای اینترنت هم، DNS نقشی مشابه دفترچه تلفن را دارد. DNS مخفف Domain Name System است و سیستمی است که
+                نام‌های دامنه قابل خواندن توسط انسان (مانند www.digikala.com) را به آدرس‌های IP (مانند 142.250.189.142)
+                که توسط کامپیوترها قابل خواندن هستند، ترجمه می‌کند. حفظ کردن آدرس های آی پی برای ما انسانها سخت هست اما
+                تخصیص نام مثل digikala.com کار را ساده تر می کند.
+              </p>
+              <p>
+                مثال:
+                <br>
+                وقتی شما در مرورگر وب خود، آدرس "www.digikala.com" را وارد می‌کنید، کامپیوتر شما درخواستی را به سرور DNS
+                ارسال می‌کند. سرور DNS، آدرس IP مربوط به دیجیکالا را پیدا می‌کند و آن را به کامپیوتر یا گوشی شما ارسال
+                می‌کند. سپس، کامپیوتر شما با استفاده از این آدرس IP، به سرور وب سایت دیجیکالا متصل می‌شود و صفحه اصلی آن
+                را برای شما نمایش می‌دهد.
+              </p>
+              <p>
+                سرورهای DNS در سراسر جهان توزیع شده‌اند.
+                این امر به منظور توزیع بار ترافیک و اطمینان از دسترسی سریع به اطلاعات DNS در هر نقطه از جهان انجام
+                می‌شود.
+                اکثر ISPها (ارائه دهندگان خدمات اینترنت مثل ایرانسل یا شاتل) سرورهای DNS خود را دارند که به طور پیش فرض
+                برای کاربرانشان
+                تنظیم شده است.
+                همچنین می توانید از سرورهای DNS عمومی مانند Google Public DNS یا OpenDNS استفاده کنید.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  سرور سایت مقصد می تواند تشخیص دهد که کاربر از چه موقعیت مکانی در حال اتصال است. این عمل با بررسی چند
+                  عامل از جمله آدرس IP و سرور DNS قابل تشخیص هست. بر همین اساس در کنار استفاده از VPN که آی پی را تغییر
+                  می‌دهد یکی دیکر از راه‌های دور زدن تحریم که بیشتر توسط علاقه‌مندان بازی‌های کامپیوتری استفاده می‌شود
+                  استفاده از سرورهای DNS مخصوص است.
+                </small>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_65">
+              <h2>دامین اینترنتی - Domain</h2>
+              <p>
+                همان آدرسی هست که شما با وارد کردن آن در مرورگرتان وارد یک سایت می شوید. مثل آدرس سایت دیجیکالا:
+                www.digikala.com
+              <p>
+                حفظ کردن آدرس های آی پی برای ما انسانها سخت هست اما تخصیص نام مثل digikala.com کار را ساده تر می کند. در
+                واقع با این نام دامنه که به یک آدرس آپی پی منحصر به فرد متصل است ما می توانید به سرور دیجیکالا متصل شویم
+                و محتوای آن را در
+                مرورگر خود تماشا کنیم. فرایند اتصال این نام به آدرس آی‌پی سرور توسط <a href="#ch1_60">سرور DNS</a> انجام
+                می‌شود.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  بازه زمانی ثبت یک دامین حداقل یکساله بوده و می‌توان در حین ثبت بازه‌های زمانی بیشتری مثل 5 سال را نیز
+                  انتخاب کرد. شرکت های خصوصی زیادی در داخل و خارج کشور برای ثبت دامین وجود دارد.
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch1_70">
+              <h2>فضای میزبانی یا هاست - Host</h2>
+              <p>
+                خانه ای برای وب سایت در اینترنت!
+                <br>
+                <br>
+                فرض کنید می خواهید یک فروشگاه آنلاین راه اندازی کنید. برای این کار به دو چیز مهم نیاز دارید:
+                <br>
+                <b>محصولات برای فروش:</b> این محصولات همان محتوای وب سایت شما مانند متن، تصاویر و ویدئو هستند.<br>
+                <b>مکانی برای نگهداری و نمایش محصولات:</b> این مکان همان فضای میزبانی یا هاست است.
+                هاست فضایی است در یک سرور (کامپیوتر قدرتمند) که در اینترنت قرار دارد. شما می توانید فایل های وب سایت خود
+                را در این فضا ذخیره کنید تا در دسترس کاربران در سراسر جهان قرار بگیرند.
+              </p>
+              <p>
+                انواع هاست:
+                <br>
+                <b>هاست اشتراکی:</b> در این نوع هاست، فضای سرور بین چندین وب سایت به اشتراک گذاشته می شود. این نوع هاست
+                ارزان تر است، اما منابع کمتری را ارائه می دهد.<br>
+                <b>هاست اختصاصی:</b> در این نوع هاست، یک سرور کامل به طور اختصاصی به وب سایت شما اختصاص داده می شود. این
+                نوع هاست گران تر است، اما قدرت و انعطاف پذیری بیشتری را ارائه می دهد.<br>
+                <b>هاست ابری:</b> در این نوع هاست، وب سایت شما بر روی چندین سرور اجرا می شود که در فضای ابری قرار دارند.
+                این نوع هاست مقیاس پذیری و پایداری بالایی را ارائه می دهد.
+              </p>
+
+              <div class="accordion" id="accordionDefault">
+                <div class="card">
+                  <div class="card-header" id="heading_ch1_15_01">
+                    <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse"
+                        data-target="#collapse_ch1_15_01" aria-expanded="false" aria-controls="collapse_ch1_15_01">معنی
+                        واژه ابری در سرورهای ابری چیست؟</a> </h5>
+                  </div>
+                  <div id="collapse_ch1_15_01" class="collapse" aria-labelledby="heading_ch1_15_01"
+                    data-parent="#accordionDefault">
+                    <div class="card-body">
+                      این سرورها شبیه ابرها در آسمان هستند، یعنی منابع ابری در دسترس هستند و می‌توانند به سرعت و به
+                      آسانی در سراسر جهان توزیع شوند. این واژه استعاره از عدم وابستگی به مکان است. یعنی شما به یک مکان
+                      فیزیکی خاص محدود نمی‌شوید، می‌توانید از هر کجا به سرور خود دسترسی داشته باشید.
+                      <br>
+                      <br>
+                      سرور ابری به زبان ساده، شبیه به اجاره کردن یک کامپیوتر قدرتمند در اینترنت است. به جای اینکه خودتان
+                      یک کامپیوتر فیزیکی بخرید و نگهداری کنید، می‌توانید از منابع یک سرور بزرگ که در یک مرکز داده قرار
+                      دارد استفاده کنید.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                بسیاری از سرویس دهندگان مطرح مثل دیجیکالا یا اسنپ نیازمند سرورهای اختصاصی با منابع اختصاصی خود هستند و
+                بر همین اساس به سمت مدل های پیشرفته تر و قوی تر سرور می‌روند که در ادبیات این حوزه به این قبیل سرورها
+                VPS و مدل پیشرفته تر Dedicated Server (سرور اختصاصی) می‌گویند.
+              </p>
+
+              <figure class="figure">
+                <img src="../assets/images/datacenter.webp" class="figure-img img-fluid mx-auto"
+                  alt="تصویری از داخل یک دیتاسنتر">
+                <figcaption class="figure-caption">تصویری از داخل یک دیتاسنتر</figcaption>
+              </figure>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  به محلی که به صورت فیزیکی حاوی این قبیل سِرورها باشد دیتاسِنتر (تصویر بالا) یا مرکز داده می‌گویند. در
+                  ایران نیز
+                  تعدادی دیتاسنتر در کلانشهرها وجود دارد. بسیاری از سایت های معروف داخلی از جمله دیوار و دیجیکالا در
+                  داخل دیتاسنترهای داخلی قرار دارند و بدین ترتیب زمانی که دسترسی به اینترنت (سایت های خارجی) توسط حاکمیت
+                  مختل شود این سایت های ایرانی در دسترس خواهند بود.
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+            <!-- End Chapter 1
+		============================ -->
+
+
+            <!-- Begin Chapter 2
+		============================ -->
+            <section id="chapter_02">
+              <h2 class="chapter-title">فصل دوم: مفاهیم امنیتی پرکاربرد</h2>
+              <p class="text-4">گزیده‌ای از مهمترین و پرتکرارترین عبارات رایج در حوزه امنیت سایبری در این فصل فهرست شده
+                است.</p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_01">
+              <h2>بد افزار - Malware</h2>
+              <p>هر نوع نرم‌افزاری است که از روی عمد برای آسیب‌زدن به کامپیوتر، گوشی، سِروِر یا شبکه کامپیوتری طراحی
+                شده‌است. موارد زیر همگی بدافزار تلفی می‌شوند.
+              <ul>
+                <li>ویروس</li>
+                <li>کرم</li>
+                <li>تروجان</li>
+                <li>باج افزار</li>
+              </ul>
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  در ادبیات عامه به هر نوع بدافزاری ویروس می‌گویند. اما در حقیقت تفاوت‌هایی وجود دارد که در ادامه آورده
+                  شده است.
+                </small>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_05">
+              <h2>ویروس</h2>
+              <p>نوعی برنامه کامپیوتری است که در هنگام اجرای برنامه، با دستکاری سایر نرم افزارها و وارد کردن کد مخصوص به
+                خود، خود را تکرار می‌کند. هنگامی که این تکثیر موفقیت‌آمیز باشد، گفته می‌شود مناطق آسیب دیده به ویروس
+                رایانه ای آلوده می‌شوند.
+              </p>
+
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_10">
+              <h2>کِرم - Worm</h2>
+              <p>
+                کِرم به برنامه‌ای گفته می‌شود که توانایی بازتولید خود را داراست، و با استفاده از شبکه کپی‌های خود را به
+                دیگر سیستم های موجود در شبکه می‌فرستد. برخلاف ویروس، کرم‌ها خود را به برنامه‌های دیگر نمی‌چسباند. همچنین
+                کرم‌ها عموماً با اشغال <a href="#ch1_46">پهنای باند</a> به شبکه آسیب می‌رسانند در حالی که ویروس‌ها در
+                بیشتر اوقات باعث خرابی
+                برنامه‌های موجود در کامپیوتر آلوده و از دست رفتن اطلاعات موجود در آن می‌شوند.
+
+                هدف کرم‌ها معمولاً استفاده از منابع می‌باشد و می‌تواند در دسترسی شما به منابع تأخیر بیندازد.
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  در علوم رایانه، یک منبع یا منبع سیستمی به هر جزء فیزیکی یا مجازی با محدودیت دسترسی در یک سیستم
+                  رایانه‌ای اطلاق میگردد. بنابراین هر قطعه متصل به یک رایانه، یک منبع می‌باشد. تمامی قطعات سخت افزاری یک
+                  رایانه، منابع آن رایانه هستند.
+                </small>
+              </div>
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_15">
+              <h2>اسب تِروآ - Trojan Horse</h2>
+              <p>در طول جنگ تروا، یونانی‌ها پس از محاصره ناموفق شهر تروا، نقشه‌ای حیله‌گرانه برای ورود به شهر طراحی
+                کردند. آنها مجسمه عظیمی از یک اسب چوبی ساختند و سربازان خود را در داخل آن پنهان کردند. سپس وانمود کردند
+                که عقب‌نشینی می‌کنند و اسب را به عنوان هدیه‌ای برای تروجان‌ها رها می‌کنند.
+              </p>
+              <p>
+                تروجان‌ها (ساکنین تروآ) که فریب یونانی‌ها را خورده بودند، اسب را به داخل شهر بردند. شب هنگام، سربازان
+                یونانی از اسب
+                بیرون آمده و دروازه‌های شهر را به روی ارتش خود گشودند. یونانی‌ها به شهر تروا حمله کرده و آن را ویران
+                کردند.
+              </p>
+              <p>
+                امروزه از اصطلاح اسب تروآ برای اشاره به هر برنامه یا دستگاهی استفاده می‌شود که ظاهری بی‌ضرر دارد، اما در
+                واقع مخرب است. این برنامه‌ها یا دستگاه‌ها می‌توانند حاوی بدافزار باشند که به سیستم کامپیوتری شما آسیب
+                می‌رساند یا اطلاعات شما را سرقت می‌کند.
+              <p>
+                مثال:
+                <br>
+                فرض کنید شما یک فایل پیوست ایمیل را از منبعی ناشناس دریافت می‌کنید. ممکن است این فایل حاوی یک اسب تروآ
+                باشد که در صورت باز کردن آن، بدافزار به سیستم شما نفوذ می‌کند و اطلاعات شخصی شما را به سرقت می‌برد.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_20">
+              <h2>درِ پشتی - Backdoor</h2>
+              <p>
+                فرض کنید خانه‌ای دارید و می‌خواهید برای نظافت به کسی دسترسی بدهید. به جای اینکه هر بار زنگ بزنید و منتظر
+                بمانید تا در را باز کنید، می‌توانید به او کلید یدکی بدهید تا هر وقت خواست، بدون نیاز به شما وارد خانه
+                شود.
+              </p>
+              <p>
+                در پشتی یا بَک‌دُر در دنیای کامپیوتر هم همین کار را می‌کند. راه مخفی است که به افراد غیرمجاز اجازه
+                می‌دهد بدون عبور از مراحل امنیتی معمولی به یک سیستم کامپیوتری، شبکه یا برنامه دسترسی پیدا کنند.
+              </p>
+              <p>
+                درهای پشتی ممکن است از قبل در سامانه وجود داشته باشند یا اینکه فرد نفوذگر با فریب کاربر، او را نسبت به
+                نصب در پشتی ترغیب کند (مانند ارسال پیوست‌های آلوده در ایمیل).
+              </p>
+              <p>
+                یک شرکت نرم افزاری ممکن است یک در پشتی در برنامه خود تعبیه کند تا بتواند اطلاعات استفاده شما را جمع آوری
+                کند یا تبلیغات را به شما نشان دهد.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_25">
+              <h2>حمله سایبری - Cyber Attack</h2>
+              <p>هرگونه تلاش برای افشا، تغییر، غیرفعال کردن، تخریب، سرقت یا دسترسی غیرمجاز یا استفاده غیرمجاز از یک
+                دارایی دیجیتال است.
+
+                حمله سایبری هر نوع مانور تهاجمی است که سامانه‌های اطلاعات رایانه ای، زیرساخت‌ها، شبکه‌های رایانه ای یا
+                دستگاه‌های رایانه شخصی را هدف قرار می‌دهد.
+              </p>
+              <p>
+                مهاجم یک شخص یا فرایندی است که سعی در دسترسی به داده‌ها، کارکردها یا سایر مناطق محدود سامانه بدون مجوز،
+                به‌طور بالقوه با قصد مخرب دارد.
+              </p>
+
+              <p>
+                انواع حملات سایبری:
+                <br>
+                <b>بدافزار:</b> هکر می‌تواند با استفاده از بدافزار، مانند ویروس، کرم یا اسب تروآ، به سیستم شما نفوذ کند
+                و به اطلاعات شما دسترسی پیدا کند یا به آن آسیب برساند.<br>
+                <b>فیشینگ:</b> هکر با ارسال ایمیل یا پیام‌های جعلی، شما را فریب می‌دهد تا اطلاعات شخصی خود را مانند رمز
+                عبور یا شماره کارت اعتباری را به او بدهید.<br>
+                <b>حمله DoS (Denial of Service):</b> هکر با ارسال حجم زیادی از ترافیک به سمت وب سایت یا سرور شما، آن را
+                از دسترس خارج می‌کند.<br>
+                <b>حمله هک کردن:</b> هکر با استفاده از مهارت‌های خود، نقاط ضعف امنیتی سیستم شما را پیدا می‌کند و از آنها
+                برای نفوذ به سیستم شما استفاده می‌کند.
+              </p>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  ارتش سایبری به گروهی از افراد یا سازمان‌هایی گفته می‌شود که در فضای مجازی و با استفاده از ابزارها و
+                  روش‌های مختلف، به اقدامات تهاجمی یا دفاعی می‌پردازند. ارتش‌های سایبری می‌توانند توسط دولت‌ها،
+                  سازمان‌های غیردولتی، گروه‌های هکر و حتی افراد تنها ایجاد و اداره شوند.
+                </small>
+              </div>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  در ادامه به توضیح این نوع حملات پرداخته شده است.
+                </small>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_30">
+              <h2>باج افزار - Ransomware</h2>
+              <p>گونه‌ای از بدافزارها هستند که دسترسی به سیستم را محدود می‌کنند و ایجادکننده آن برای برداشتن محدودیت
+                درخواست باج می‌کند.
+
+                برخی از انواع آن‌ها روی فایل‌های هارددیسک رمزگذاری انجام می‌دهند و برخی دیگر ممکن است به سادگی سیستم را
+                قفل کنند.
+              </p>
+
+            </section>
+
+
+            <hr class="divider">
+
+            <section id="ch2_35">
+              <h2>جفنگ یا اسپَم یا هرزنامه - Spam</h2>
+              <p>به معنای پیام (هر نوع پیامی از جمله SMS) یا نامه الکترونیکی است که بدون درخواست گیرنده و برای افراد
+                بی‌شماری فرستاده می‌شود.
+
+                یکی از مشهورترین انواع اسپم هرزنامه است. اما اسپم می‌تواند شامل اسپم در پیام‌رسان‌ها، اسپم در گروه‌ها،
+                اسپم در بخش نظرات سایت ها و شبکه های اجتماعی هم بشود.
+              </p>
+              <p>
+                هدف از ارسال اسپم:
+                <br>
+                <b>تبلیغات:</b> اسپمرها (ارسال کنندگان اسپم) از اسپم برای تبلیغات محصولات یا خدمات خود به صورت ناخواسته
+                و
+                بدون رضایت شما استفاده می‌کنند.<br>
+                <b>فیشینگ:</b> اسپمرها از طریق اسپم، لینک‌های فریبنده برای هدایت شما به وب سایت‌های جعلی ارسال
+                می‌کنند تا اطلاعات شخصی شما مانند رمز عبور یا شماره کارت اعتباری را به سرقت ببرند.<br>
+                <b>پخش بدافزار:</b> اسپمرها ممکن است از طریق اسپم، بدافزار مانند ویروس یا کرم را به سیستم شما
+                تزریق کنند تا به اطلاعات شما آسیب برسانند یا آنها را سرقت کنند.
+              </p>
+              <p>
+                مضرات اسپم:
+                <br>
+                <b>آزاردهنده:</b> اسپم می‌تواند بسیار آزاردهنده باشد و وقت و حوصله شما را تلف کند.<br>
+                <b>خطرناک:</b> اسپم می‌تواند حامل بدافزار یا لینک‌های فیشینگ باشد که به سیستم شما آسیب می‌رساند یا
+                اطلاعات شما را سرقت می‌کند.<br>
+                <b>غیرقانونی:</b> ارسال اسپم در بسیاری از کشورها غیرقانونی است.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_40">
+              <h2>مهندسی اجتماعی - Social Engineering</h2>
+              <p>
+                فرض کنید یک سارق می‌خواهد به خانه شما دستبرد بزند. به جای اینکه زور بازو به کار ببرد، زنگ خانه شما را
+                می‌زند و با معرفی خود به عنوان یک مامور یا فرد معتبر، از شما می‌خواهد که در را باز کنید.
+
+                مهندسی اجتماعی هم دقیقا همین کار را می‌کند، با این تفاوت که در دنیای دیجیتال اتفاق می‌افتد. در مهندسی
+                اجتماعی، هکر از فریب و حیله گری برای متقاعد کردن شما به انجام کاری استفاده می‌کند که به نفع اوست، اما
+                می‌تواند به شما آسیب برساند یا اطلاعات شما را به سرقت ببرد.
+              </p>
+              <p>
+                تکنیک‌های مهندسی اجتماعی:
+                <br>
+                <b>فریبکاری:</b> هکر ممکن است با معرفی خود به عنوان یک فرد یا سازمان معتبر، شما را فریب دهد تا اطلاعات
+                شخصی خود را به او بدهید یا روی یک لینک فریبنده کلیک کنید.<br>
+                <b>ایجاد حس اضطرار:</b> هکر ممکن است با ایجاد حس اضطرار یا ترس، شما را وادار به اقدام سریع بدون فکر کردن
+                کند.<br>
+                <b>سوء استفاده از اعتماد:</b> هکر ممکن است از اعتماد شما به دیگران سوء استفاده کند و شما را فریب دهد تا
+                اقداماتی را انجام دهید که به ضرر شماست.<br>
+              </p>
+              <p>به دستکاری یا تحریک روانشناختی افراد (عمدتا فریب) در انجام کارهای خاص یا افشای اطلاعات اشاره دارد.
+
+                این اصطلاح با مهندسی اجتماعی در علوم سیاسی از این نظر تفاوت دارد که مهندسی اجتماعی در علوم سیاسی تمرکزی
+                روی افشای اطلاعات محرمانه ندارد.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  این مورد شباهت بسیار زیادی به واژه «مخ‌زنی» که در بین عام مردم رایج است دارد. بسیاری از قربانیان از
+                  این طریق هک می‌شوند.
+                </small>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_45">
+              <h2>تله‌گذاری یا فیشینگ - Phishing</h2>
+              <p>به تلاش برای به دست آوردن اطلاعاتی مانند نام کاربری، گذرواژه، اطلاعات حساب بانکی و مانند آن‌ها از طریق
+                جعل یک وبسایت، آدرس ایمیل و مانند آن‌ها گفته می‌شود.
+
+                یا به بیان ساده‌تر هنگامی که شخصی تلاش می‌کند دیگری را فریب دهد تا اطلاعات شخصی او را در اختیارش بگیرد،
+                یک حمله فیشینگ رخ می‌دهد و یک بازار غیرقانونی چند هزار میلیاردی را تشکیل داده است.
+              </p>
+              <p>
+                انواع فیشینگ:
+                <br>
+                <b>فیشینگ ایمیل:</b> هکر یک ایمیل جعلی ارسال می‌کند که در آن شما را به بازدید از وب سایت جعلی یا کلیک بر
+                روی یک لینک دعوت می‌کند.<br>
+                <b>فیشینگ وب سایت:</b> هکر یک وب سایت جعلی ایجاد می‌کند که شبیه به وب سایت یک سازمان معتبر است.<br>
+                <b>فیشینگ پیام کوتاه:</b> هکر یک پیام کوتاه جعلی ارسال می‌کند که در آن شما را به بازدید از وب سایت جعلی
+                یا تماس با یک شماره تلفن جعلی دعوت می‌کند.<br>
+                <b>فیشینگ صوتی:</b> هکر با شما تماس تلفنی برقرار می‌کند و خود را به عنوان یک نماینده از یک سازمان معتبر
+                معرفی می‌کند و از شما می‌خواهد که اطلاعات شخصی خود را به او بدهید.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  پیامک‌های جعلی عدلیران و سامانه ثنا (قوه قضاییه) از نمونه‌های بارز فیشینگ ایرانی است.
+                </small>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_50">
+              <h2>آسیب پذیری - Vulnerability</h2>
+              <p>نقطه‌ضعفی است که به افراد غیرمجاز اجازه می‌دهد بدون عبور از مراحل امنیتی معمولی به یک سیستم کامپیوتری،
+                شبکه یا برنامه دسترسی پیدا کنند.
+              </p>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  آپدیت هایی که برای نرم افزارها از جمله ویندوز یا اندروید و iOS عرضه می‌شوند همواره تعدادی از
+                  آسیب‌پذیری های گزارش شده را اصلاح یا برطرف کرده‌اند.
+                </small>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch2_55">
+              <h2>رمزگذاری - Encryption</h2>
+              <p>روند رمز کردن پیام‌ها یا اطلاعات است به گونه ای که تنها افراد مجاز قادر به خواندن آن باشند.
+
+                پیام یا اطلاعات با استفاده از یک الگوریتم، رمزگذاری شده و علائم رمزی به وجود می‌آید که فقط در صورت
+                رمزگشایی قابل خواندن هستند.
+              </p>
+
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_60">
+              <h2>رمزنگاری کلید عمومی - Public-key Cryptography</h2>
+              <p>تصور کنید که می‌خواهید نامه‌ای محرمانه برای دوستتان ارسال کنید. شما دو قفل و دو کلید دارید:
+                <br>
+                <b>قفل عمومی:</b> این قفل را می‌توانید به همه بدهید. هر کسی که به نامه شما دسترسی دارد می‌تواند با
+                استفاده از این قفل آن را قفل کند.<br>
+                <b>قفل خصوصی:</b> این کلید را فقط شما دارید. فقط شما با استفاده از این کلید می‌توانید نامه را باز
+                کنید.<br>
+                رمزنگاری کلید عمومی هم دقیقا همین کار را می‌کند، با این تفاوت که به جای نامه، از اطلاعات دیجیتال مانند
+                ایمیل، پیام‌های متنی یا فایل‌ها استفاده می‌شود.
+              </p>
+              <p>
+                در اینجا چند نمونه از کاربردهای رایج رمزنگاری کلید عمومی برای عموم مردم آورده شده است:
+                <br>
+                <b>1. مرورگر وب:</b>
+                هنگامی که آدرس یک وب سایت را در مرورگر خود وارد می‌کنید و علامت قفل در نوار آدرس مشاهده می‌کنید،
+                نشان‌دهنده این است که از رمزگذاری برای محافظت از تبادل اطلاعات بین شما و وب سایت استفاده می‌شود. این امر
+                با استفاده از رمزنگاری کلید عمومی برای رمزنگاری اطلاعات و تأیید هویت وب سایت انجام می‌شود.
+                <br>
+                <img src="../assets/images/https-digikala.png" class="img-fluid mx-auto"
+                  alt="تصویر نوار آدرس مرورگر که حالت https را نشان می دهد">
+                <br>
+                <b>2. ایمیل:</b>
+                بسیاری از سرویس‌های ایمیل مانند Gmail و Yahoo Mail از رمزنگاری کلید عمومی برای محافظت از ایمیل‌های شما
+                در برابر شنود و خواندن توسط افراد غیرمجاز استفاده می‌کنند. این کار با امضای دیجیتال ایمیل‌ها و رمزنگاری
+                محتوای آنها انجام می‌شود.
+                <br>
+                <br>
+                <b>3. پیام‌های فوری:</b>
+                برنامه‌های پیام‌های فوری مانند سیگنال، واتساپ و تلگرام (در حالت Secret Chat) از رمزنگاری کلید عمومی برای
+                محافظت از حریم خصوصی مکالمات شما استفاده می‌کنند. این کار با رمزنگاری پیام‌ها و تأیید هویت طرفین مکالمه
+                انجام می‌شود.
+                <br>
+                <br>
+                <b>4. بانکداری آنلاین:</b>
+                هنگامی که از طریق اینترنت به حساب بانکی خود دسترسی پیدا می‌کنید، از رمزنگاری کلید عمومی برای محافظت از
+                اطلاعات شما در برابر هکرها و سارقان استفاده می‌شود. این کار با رمزنگاری اطلاعات ورود به سیستم شما و
+                محافظت از تراکنش‌های آنلاین شما انجام می‌شود.
+                <br>
+                <br>
+                <b>5. فروشگاه‌های آنلاین:</b>
+                هنگامی که به صورت آنلاین خرید می‌کنید، از رمزنگاری کلید عمومی برای محافظت از اطلاعات پرداخت شما مانند
+                شماره کارت اعتباری شما استفاده می‌شود. این کار با رمزنگاری اطلاعات پرداخت شما و تأیید هویت فروشگاه
+                آنلاین انجام می‌شود.
+                <br>
+                <br>
+                <b>6. امضای دیجیتال:</b>
+                از رمزنگاری کلید عمومی برای امضای دیجیتال اسناد الکترونیکی مانند قراردادها و فاکتورها استفاده می‌شود.
+                <br>
+                <br>
+                <b>7. احراز هویت:</b>
+                از رمزنگاری کلید عمومی برای تأیید هویت شما در هنگام ورود به وب سایت‌ها و برنامه‌های آنلاین استفاده
+                می‌شود. این کار با استفاده از کلید عمومی شما برای تأیید هویت شما انجام می‌شود.
+                <br>
+                <br>
+                <b>8. VPN:</b>
+                از رمزنگاری کلید عمومی در شبکه‌های خصوصی مجازی (VPN) برای محافظت از ترافیک اینترنت شما در برابر جاسوسی و
+                شنود استفاده می‌شود. این کار با رمزنگاری ترافیک شما و محافظت از آن در برابر هکرها و ISP (شرکت ارائه
+                دهنده اینترنت) شما انجام می‌شود. البته ممکن است برخی از VPN ها چنین نکنند و برعکس سو استفاده کنند.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  VPN به شما امکان می‌دهد از برخی محدودیت‌های اینترنت عبور کنید. بر همین اساس در میان عام مردم از VPN
+                  معادل فیلترشکن استفاده می‌شود. اما باید دانست که VPN کاربردهای مجاز دیگری دارد و به معنای شبکه خصوصی
+                  مجازی است.
+                </small>
+
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_65">
+              <h2>رمزگذاری سَرتاسَر - End-to-End Encryption</h2>
+              <p>یک سیستم ارتباطی است که تنها افراد دو طرف ارتباط، قادر به خواندن پیام‌ها هستند. در این شیوه ارتباطی،
+                شنود کلیدهایی که برای رمزگذاری مکالمه استفاده می‌شود برای هیچ فردی از جمله رساننده خدمات اینترنتی و
+                ارائه دهندگان خدمات مخابراتی امکان‌پذیر نخواهد بود.
+
+                در رمزگذاری سرتاسر از آنجا که هیچ شخص دیگری امکان کشف داده‌های در حال مبادله یا ذخیره را ندارد، امکان
+                مراقبت و دستکاری غیرممکن است.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  برنامه‌های پیام‌رسانی مانند واتس‌اپ، سیگنال و تلگرام (در حالت Secret Chat) از رمزنگاری سرتاسر برای
+                  محافظت از پیام‌ها،
+                  تماس‌های صوتی و تصویری شما در برابر هکرها، شرکت‌های مخابراتی و حتی خود شرکت ارائه دهنده خدمات استفاده
+                  می‌کنند.
+
+                  <br>
+                  <br>
+                  برخی از مرورگرهای وب مانند Tor از رمزنگاری سرتاسر برای محافظت از فعالیت آنلاین شما در برابر ردیابی و
+                  نظارت استفاده می‌کنند.
+                </small>
+              </div>
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_70">
+              <h2>کی‌لاگر- Keylogger</h2>
+              <p>کی‌لاگر، به نرم‌افزارهایی گفته می‌شود که کلیدهای فشرده‌شده بر روی صفحه کلید را ذخیره می‌کنند؛ به صورتی
+                که می‌توان از آن، اطلاعات تایپ شدهٔ کاربران؛ از قبیل رمزهای عبور آن‌ها را سرقت کرد.
+
+                کی‌لاگرها را می‌توان هم به صورت نرم‌افزاری و هم به صورت سخت‌افزاری مورد استفاده قرار داد.
+              </p>
+              <p>
+                مشابه تصویر دلیل ارائه یک صفحه کلید نرم افزاری در برخی از سرویس ها از جمله درگاه پرداخت جلوگیری از سرقت
+                رمز تایپ شده توسط همین کی‌لاگرها است.
+              </p>
+              <img src="../assets/images/keypad-mellat-ipg.png" class="img-fluid mx-auto"
+                alt="صفحه کلید رقمی در درگاه پرداخت برای جلوگیری از عملکرد کی‌لاگرها">
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_75">
+              <h2>جستجوی فراگیر – Brute Force</h2>
+              <p>حدس و گمان تا رسیدن به هدف!
+                <br>
+                <br>
+                فرض کنید قفلی دارید که رمز آن را گم کرده‌اید. دو راه برای باز کردن آن دارید:
+                <br>
+                <b>کلیدها را امتحان کنید:</b> می‌توانید تک تک کلیدها را امتحان کنید تا کلید درست را پیدا کنید. این روش
+                جستجوی فراگیر یا Brute Force نامیده می‌شود.<br>
+                <b>از یک متخصص کمک بگیرید:</b> می‌توانید از یک متخصص قفل‌ساز کمک بگیرید تا قفل را برای شما باز کند.
+              </p>
+              <p>
+                در دنیای کامپیوتر، هکرها از جستجوی فراگیر برای حدس زدن رمز عبور، پین یا کلید برای ورود به سیستم‌ها،
+                حساب‌های کاربری یا شبکه‌ها استفاده می‌کنند. حال اگر طول رمز عبور کوتاه نباشد و حاوی کاراکترهای مختلف
+                باشد این کار برای هکر سخت تر می‌شود.
+              </p>
+              <p>
+                به همین دلیل در صفحه ورود یا ثبت نام سرویس‌ها از ابزاری موسوم به کَپچا (CAPTCHA) استفاده می‌کنند تا
+                مهاجم مهار شود و نتواند مکرر و بی‌قفه کلمات عبور را امتحان کند.
+              </p>
+              <img src="../assets/images/captcha.png" class="img-fluid mx-auto"
+                alt="کپچا برای جلوگیری از حملات جستجوی فراگیر">
+
+              <div class="accordion" id="accordionDefault">
+                <div class="card">
+                  <div class="card-header" id="heading_ch2_16_01">
+                    <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse"
+                        data-target="#collapse_ch2_16_01" aria-expanded="false" aria-controls="collapse_ch2_16_01">کپچا
+                        چطور مانع چنین حملاتی می‌شود؟</a> </h5>
+                  </div>
+                  <div id="collapse_ch2_16_01" class="collapse" aria-labelledby="heading_ch2_16_01"
+                    data-parent="#accordionDefault">
+                    <div class="card-body">
+                      در چنین حملاتی تلاش می‌کنند با استفاده از ابزارهایی موسوم به ربات تمام ترکیبات ممکن برای رمز عبور
+                      یا اطلاعات ورود به سیستم را
+                      حدس زده و امتحان کنند. کپچا با ارائه چالشی که حل آن برای انسان آسان اما برای کامپیوتر دشوار است،
+                      مانع این
+                      حملات می شود.
+                      <br>
+                      <br>
+                      حل کردن کپچا زمان می‌برد، که سرعت این حملات را به طور قابل توجهی کاهش می‌دهد. برای حل کردن کپچا به
+                      انسان نیاز است، که برای مهاجمان گران است.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_80">
+              <h2>تصدیق هویت چندعاملی - Multi-factor Authentication </h2>
+              <p>قفلی با چند کلید!
+                <br>
+                <br>
+                فرض کنید در حال ورود به خانه خود هستید. به جای یک کلید، از دو کلید استفاده می‌کنید:
+                <br>
+                <b>کلید اول:</b> این کلید را برای باز کردن در استفاده می‌کنید.<br>
+                <b>کلید دوم:</b> این کلید را برای فعال کردن سیستم امنیتی استفاده می‌کنید.
+              </p>
+              <p>
+                تصدیق هویت چندعاملی (MFA) یا احراز هویت دو عاملی (2FA) نیز به همین صورت عمل می‌کند، با این تفاوت که به
+                جای ورود به خانه، از آن برای ورود به حساب‌های آنلاین خود استفاده می‌شود.
+
+                MFA یک لایه امنیتی اضافی به فرآیند ورود به سیستم شما اضافه می‌کند. علاوه بر نام کاربری و رمز عبور خود،
+                باید اطلاعات دیگری نیز مانند کد ارسال شده به تلفن همراهتان یا پاسخ به یک سوال امنیتی را وارد کنید.
+              </p>
+              <img src="../assets/images/2fa-athentication.png" class="img-fluid mx-auto"
+                alt="ورود دو عاملی در صفحه ورود اینترنت بانک مسکن">
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_85">
+              <h2>حمله محروم‌سازی از سرویس - Denial of Service </h2>
+              <p>سیل تقاضا برای فلج کردن سیستم!
+                <br>
+                <br>
+                فرض کنید صاحب یک رستوران هستید. ناگهان، تعداد زیادی سفارش جعلی به صورت آنلاین دریافت می‌کنید که باعث
+                می‌شود تمام منابع شما اشغال شود و دیگر نتوانید به مشتریان واقعی خود خدمات ارائه دهید. این یک حمله
+                محروم‌سازی از سرویس (DoS) است.
+              </p>
+              <p>
+                حمله DoS به نوعی حمله سایبری گفته می‌شود که هدف آن از کار انداختن یک سیستم یا شبکه با سیل تقاضا است. این
+                حمله می‌تواند به روش‌های مختلفی انجام شود، از جمله:
+                <br>
+              <ul>
+                <li>
+                  ارسال حجم زیادی از درخواست‌های جعلی به یک وب سایت یا سرور.
+                </li>
+                <li>
+                  ارسال بسته‌های داده مخرب به یک شبکه.
+                </li>
+                <li>
+                  استفاده از بات‌نت (شبکه‌ای از رایانه‌های آلوده) برای راه اندازی یک حمله هماهنگ.
+                </li>
+              </ul>
+              هدف از حمله DoS این است که سیستم یا شبکه را برای کاربران واقعی غیرقابل دسترس کند. این می‌تواند منجر
+              به
+              از دست دادن پول، آسیب به شهرت و سایر مشکلات شود.
+
+              </p>
+
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_90">
+              <h2>بات نت - Botnet</h2>
+              <p>تصور کنید یک ارتش از ربات‌ها دارید که می‌توانید از آنها برای انجام هر کاری که می‌خواهید استفاده کنید.
+                این دقیقاً همان کاری است که بات‌نت‌ها انجام می‌دهند.
+              </p>
+              <p>
+                بات‌نت یک شبکه از کامپیوترهای (یا گوشی) آلوده است که توسط یک هکر یا گروهی از هکرها کنترل می‌شود. این
+                کامپیوترها، که به آنها بات یا زامبی گفته می‌شود، بدون اطلاع یا رضایت صاحبان آنها آلوده شده‌اند.
+              </p>
+              <p>
+                عمدتاً هکرها از بات‌نت‌ها برای انجام فعالیت‌های مخرب زیر استفاده می‌کنند:
+                <br>
+                <b>حمله DoS:</b> ارسال حجم زیادی از تقاضا به یک وب سایت یا سرور برای از کار انداختن آن.<br>
+                <b>ارسال ایمیل‌های اسپم:</b> ارسال ایمیل‌های ناخواسته به تعداد زیادی از افراد.<br>
+                <b>سرقت اطلاعات:</b> سرقت اطلاعات شخصی مانند اطلاعات بانکی یا اطلاعات کارت اعتباری.<br>
+                <b>استخراج ارزهای دیجیتال:</b> استفاده از قدرت پردازش بات‌ها برای استخراج ارزهای دیجیتال.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  استفاده از اپلیکیشن های غیر اصل مثل تلگرام طلایی یا VPN های رایگان غیرمعتبر از شایع‌ترین علل تبدیل شدن
+                  یک سیستم به عضوی از شبکه بات نت و در نتیجه مشارکت در حملات و مصرف غیرمتعارف پهنای باند و اینترنت است.
+                </small>
+              </div>
+
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_95">
+              <h2>نفوذ و تغییر ظاهر سایت - Defacement</h2>
+              <p>
+                فرض کنید صاحب یک فروشگاه هستید. ناگهان، کسی به فروشگاه شما نفوذ می‌کند و روی دیوارهای آن شعارها و
+                نقاشی‌های توهین‌آمیز می‌کشد. این دقیقاً همان کاری است که هکرها در حمله نفوذ و تغییر ظاهر سایت
+                (Defacement) انجام می‌دهند.
+              </p>
+              <p>
+                حمله نفوذ و تغییر ظاهر سایت به نوعی حمله سایبری گفته می‌شود که هدف آن تغییر ظاهر یک وب سایت است. هکرها
+                با نفوذ به سرور وب سایت، می‌توانند محتوای آن را تغییر داده یا پیام‌های خود را به آن اضافه کنند.
+              </p>
+              <p>
+                اهداف حمله نفوذ و تغییر ظاهر سایت:
+                <br>
+                <b>آسیب رساندن به شهرت:</b> هکرها ممکن است برای آسیب رساندن به شهرت صاحب وب سایت یا سازمان، ظاهر آن را
+                تغییر دهند.<br>
+                <b>انتشار پیام:</b> هکرها ممکن است از وب سایت برای انتشار پیام‌های سیاسی یا مذهبی خود استفاده کنند.<br>
+                <b>پنهان کردن بدافزار:</b> هکرها ممکن است بدافزار را در وب سایت پنهان کنند تا به بازدیدکنندگان آن آسیب
+                برسانند.
+              </p>
+              <img src="../assets/images/defacement.png" class="img-fluid mx-auto"
+                alt="نمونه ای از تغییر صفحه اول یک سایت ">
+
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_100">
+              <h2>کوکی - Cookie</h2>
+              <p>کوکی وب، کوکی اینترنتی، کوکی مرورگر یا کوکی قطعه کوچکی از اطلاعات است که هنگام مرور وب سایت توسط مرورگر
+                وب در کامپیوتر یا موبایل کاربر ذخیره می‌شود.
+
+                کوکی‌ها به عنوان مکانیزم قابل اطمینان برای به خاطر سپردن اطلاعات مناسب (مانند موارد اضافه شده در سبد
+                خرید در فروشگاه آنلاین) یا ثبت فعالیت مرور کاربر (از جمله کلیک کردن روی دکمه‌های خاص، ورود به سیستم یا
+                ضبط صفحه‌هایی که بازدید شده‌اند)، برای وب سایت‌ها طراحی شده‌اند.
+
+                همچنین می‌توان از آنها برای به خاطر سپردن اطلاعاتی که کاربر قبلاً در قسمت‌های فرم وارد کرده‌است مانند
+                نام، آدرس، گذرواژه و شماره کارت پرداخت استفاده کرد.
+              </p>
+              <p>
+                <b>شرکت های تبلیغاتی</b>
+                <br>
+                شرکت‌های تبلیغاتی از کوکی‌ها، که فایل‌های متنی کوچکی هستند که در مرورگر شما ذخیره می‌شوند، برای ردیابی
+                فعالیت آنلاین شما استفاده می‌کنند.
+
+                با این کار، آنها می‌توانند بفهمند که شما به چه وب‌سایت‌هایی سر زده‌اید، چه چیزهایی را جستجو کرده‌اید و
+                به چه چیزهایی علاقه‌مند هستید.سپس از این اطلاعات برای نمایش تبلیغات مرتبط با علایق شما در وب‌سایت‌های
+                مختلف استفاده می‌کنند.
+              </p>
+              <p>
+                <b>Cookie Law - قانون کوکی</b>
+                <br>
+                قانون کوکی که به آن قانون حریم خصوصی و ارتباطات الکترونیکی نیز گفته می شود، در سال 2011 توسط اتحادیه
+                اروپا به تصویب رسید و برای همه وب سایت هایی که به کاربران در اتحادیه اروپا خدمات ارائه می دهند لازم
+                الاجرا است.
+              </p>
+              <p>
+                قانون کوکی قانونی است که نحوه استفاده وب‌سایت‌ها از کوکی‌ها را برای ردیابی کاربران تنظیم می‌کند. هدف این
+                قانون محافظت از حریم خصوصی آنلاین کاربران است.
+
+                طبق این قانون، وب‌سایت‌ها باید قبل از ذخیره کوکی‌ها در دستگاه کاربران، رضایت آنها را به دست آورند و
+                اطلاعات شفاف و روشنی در مورد نحوه استفاده از کوکی‌ها ارائه دهند.
+              </p>
+              <img src="../assets/images/cookie-law-prompt.png" class="img-fluid mx-auto"
+                alt="یک پیام برای پذیرش کوکی ">
+
+            </section>
+            <hr class="divider">
+
+            <section id="ch2_105">
+              <h2>مجوزها در برنامه های موبایلی - Permissions</h2>
+              <p>مشخص می‌کند که برنامه یا اپلیکیشن‌ها هنگام استفاده از دستگاه شما به چه ویژگی های دستگاه دسترسی پیدا
+                می‌کنند. می‌توانید مجوزها را به طور پیش فرض برای همه برنامه‌ها تنظیم کنید یا هر بار در حین درخواست
+                اپلیکیشن مربوطه اجازه دسترسی موقت دهید. به طور پیش فرض، به اکثر برنامه‌ها نیازی به مجوزهای زیادی ندارید.
+                فقط مجوزهایی را که برای عملکرد برنامه ضروری هستند، اعطا کنید.
+              </p>
+              <p>
+                مجوزهای موبایل مانند نگهبانان حریم خصوصی شما عمل می‌کنند و به شما این امکان را می‌دهند که کنترل کنید چه
+                اطلاعاتی از شما جمع‌آوری و استفاده می‌شود.
+              </p>
+
+              <figure class="figure">
+                <img src="../assets/images/android-permissions.png" class="figure-img img-fluid mx-auto"
+                  alt="فهرست مجوزها در اندروید">
+                <figcaption class="figure-caption">لیست مجوزها در سیستم عامل اندروید</figcaption>
+              </figure>
+
+              <p>
+                انواع مجوزهای موبایل:
+                <br>
+
+                <b>مکان:</b> به برنامه اجازه می‌دهد تا به موقعیت مکانی فعلی یا سابقه مکان شما دسترسی داشته باشد.<br>
+                <b>مخاطبین:</b> به برنامه اجازه می‌دهد تا به لیست مخاطبین شما دسترسی داشته باشد و با آنها تماس بگیرد یا
+                پیام ارسال کند.<br>
+                <b>دوربین:</b> به برنامه اجازه می‌دهد تا از دوربین شما عکس یا فیلم بگیرد.<br>
+                <b>میکروفون:</b> به برنامه اجازه می‌دهد تا از میکروفون شما برای ضبط صدا استفاده کند.<br>
+                <b>حافظه:</b> به برنامه اجازه می‌دهد تا به فایل‌ها و عکس‌های شما در حافظه گوشی دسترسی داشته باشد.<br>
+                <b>بلوتوث:</b> به برنامه اجازه می‌دهد تا از طریق بلوتوث با دستگاه‌های دیگر ارتباط برقرار کند.<br>
+                <b>حسگرها:</b> به برنامه اجازه می‌دهد تا از حسگرهای گوشی شما مانند شتاب‌سنج و ژیروسکوپ استفاده کند.<br>
+                <b>تماس:</b> به برنامه اجازه می‌دهد تا با شماره تلفن‌ها تماس بگیرد یا پیامک ارسال کند.<br>
+                <b>پیامک:</b> به برنامه اجازه می‌دهد تا پیامک ارسال و دریافت کند.<br>
+                <b>ذخیره‌سازی خارجی:</b> به برنامه اجازه می‌دهد تا به حافظه خارجی مانند کارت SD دسترسی داشته باشد.
+              </p>
+
+            </section>
+            <hr class="divider">
+            <!-- End Chapter 2
+		============================ -->
+
+            <!-- Begin Chapter 3
+		============================ -->
+            <section id="chapter_03">
+              <h2 class="chapter-title">فصل سوم: ذهنیت مهاجمین و هکرها</h2>
+              <p class="text-4">آشنایی با ذهنیت و مقاصد هکرها کمک شایانی به درک علت بروز حمله‌های سایبری و پیامدهای آن
+                می‌کند. در این فصل به صورت خلاصه به چنین موردی می پردازیم.</p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch3_01">
+              <h2>دسته‌بندی هکرها</h2>
+              <p>
+                همه هکرها یکسان نیستند. آنها بر اساس انگیزه‌ها، مهارت‌ها و اهدافشان به دسته‌های مختلفی تقسیم
+                می‌شوند. هکر بودن به معنای مجرم بودن نیست. هکرهای زیادی هستند که از مهارت‌های خود برای اهداف مثبت
+                استفاده می‌کنند.
+              </p>
+              <p>
+                <b>کلاه سیاه:</b> کسی است که برای سود شخصی یا نیت‌های غیراخلاقی دست به نفوذ به سیستم‌ها می‌زند و کارهای
+                مخرب
+                می‌کنند و سایت‌ها را تخریب کرده یا اطلاعاتی را می‌دزدند.
+                <br>
+                <b>کلاه سفید:</b> به آن دسته از هکرهایی گفته می‌شود که کارهای مفیدی انجام می‌دهند، نفوذ می‌کنند اما بدون
+                نیت
+                بد. دلیل کار آن‌ها معمولاً بررسی امنیت سیستم‌ها است.
+                <br>
+                <b>کلاه خاکستری:</b> ترکیبی از هکر کلاه سیاه و کلاه سفید است. یک هکر کلاه خاکستری معمولاً چیزی بینابین
+                هکرهای
+                کلاه سیاه و کلاه سفید است.
+                <br>
+                <b>Hacktivist:</b> گروهی از هکرها که با اهداف سیاسی یا اجتماعی قصد دارند پیامی را منتقل کنند.
+                <br>
+                <b>تروریست سایبری:</b> هکرهایی که با اهداف سیاسی یا با همراهی دولت ها دست به تخریب، جنایت یا حمله
+                می‌زنند.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  کلمه "هکر" در طول زمان دستخوش تغییرات زیادی شده است. در معنای لغوی، تمرکز بر مهارت و خلاقیت بود، در
+                  حالی که در معنای امروزی، تمرکز بر نفوذ غیرمجاز است.
+
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch3_02">
+              <h2>صفات عمده هکرها</h2>
+              <p>
+                <b>عمدتاً صبور:</b> نفوذ و تخریب و جمع آوری اطلاعات نیاز به صبر دارد.<br>
+                <b>مصمم:</b> همیشه باید یک گام از سدهای امنیتی جلوتر باشند و آنقدر تلاش کنند تا نفوذ کنند.<br>
+                <b>بی احساس:</b> اهمیتی برای قربانی قائل نیستند.<br>
+                <b>ریسک‌پذیر:</b> علی رقم تلاش چشمگیر و دامنه دار نیروهای امنیتی همچنان به فعالیت ادامه می‌دهند.<br>
+                <b>محتاط و مراقب:</b> هکرهای واقعی برای در امان ماندن از چنگ قانون باید محتاط و مراقب باشند تا ردی به
+                جا نگذارند.<br>
+                <b>رفتارهای انحرافی:</b> هنجارشکن هستند و برخی اصول پذیرفته شده اجتماعی را زیر پا می‌گذارند.<br>
+                <b>ضعف در مهارت‌های اجتماعی:</b> بخشی از بی رحمی هکرها ریشه در همین صفت آنها دارد.<br>
+                <b>دارای عقده و حقارت:</b> برخی از اهداف شوم هکرها ریشه در حقارت های قبلی آنها دارد.<br>
+                <b>رادیکال:</b> دسته هکتویست ها و تروریست های سایبری پیرو و هوادار تفکرات بنیادی اجتماعی، سیاسی مذهبی
+                هستند.<br>
+                <b>سرکش:</b> رفتار خلاف جهت آنها در قبال قانون و عرف نیازمند خصلت سرکش بودن است.<br>
+                <b>واپس‌زده:</b> به دلیل برخی از نارسایی اجتماعی که گفته شد آنها عمدتا از حمایت و همدلی کافی برخوردار
+                نیستند.<br>
+                <br>
+                یک هکر می‌تواند تظاهر به رفتارهای نرمال کند اما در خلوت خود خصلت های بالا رو بروز دهد.
+
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch3_03">
+              <h2>انگیزه‌های هکرها</h2>
+              <p>
+                <b>پول و ثروت:</b> چه کسی از پول بدش می‌آید؟<br>
+                <b>طمع:</b> رفتن ره صدساله در یک شب<br>
+                <b>قدرت یا اهداف سیاسی:</b> به کرسی نشاندن افکار مورد پسند یا حکمرانی بر دیگران<br>
+                <b>افراط‌گرایی مذهبی:</b> عدم تحمل یا سازش با مذاهب و رویکردهای دیگر. مثل داعش.<br>
+                <b>کنجکاوی و هیجان:</b> شوقی درونی برای دیدن نتیجه رفتارهای مخرب یا نفوذی که همیشه بر پایه نیات بد و
+                پلید نیستند.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+            <!-- End Chapter 3
+		============================ -->
+
+            <!-- Begin Chapter 4
+		============================ -->
+            <section id="chapter_04">
+              <h2 class="chapter-title">فصل چهارم: وبگردی و ردپای دیجیتال</h2>
+              <p class="text-4">
+                ردپای دیجیتال (digital footprint) مجموعه داده‌هایی است که از فعالیت‌های آنلاین شما باقی می‌ماند. این
+                شامل اطلاعاتی مانند تاریخچه جستجو، وب‌سایت‌هایی که بازدید کرده‌اید، اطلاعاتی که به اشتراک گذاشته‌اید و
+                کوکی‌هایی که در دستگاه شما ذخیره شده‌اند می‌شود.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch4_01">
+              <h2>ردپای دیجیتال</h2>
+              <p>
+              <h6>تاریخچه مرورگر</h6>
+              <p>
+                تاریخچه مرورگر (browser history) فهرستی از وب‌سایت‌ها، صفحات وب و منابعی است که در گذشته از آنها بازدید
+                کرده‌اید. این اطلاعات توسط مرورگر وب شما ذخیره می‌شود و به شما امکان می‌دهد به راحتی به مکان‌هایی که
+                قبلاً بوده‌اید برگردید. تاریخچه مرورگر شامل آدرس وب، تاریخ و زمان بازدید، عنوان صفحه، قطعات کد، کوکی‌ها
+                است.
+              </p>
+              <p>
+                تاریخچه مرورگر شما می‌تواند حریم خصوصی شما را به خطر اندازد، زیرا هر کسی که به رایانه شما دسترسی دارد
+                می‌تواند آن را ببیند. همچنین تاریخچه مرورگر شما می‌تواند فضای ذخیره‌سازی زیادی در رایانه شما اشغال کند،
+                به خصوص اگر از آن زیاد استفاده کنید. از طرفی تاریخچه مرورگر شما می‌تواند توسط هکرها برای سرقت اطلاعات
+                شخصی شما استفاده شود.
+              </p>
+              <h6>کوکی ها</h6>
+              <p> از <a href="#ch2_100">کوکی</a> می‌توان برای رهگیری رفتار کاربر استفاده کرد، موردی که بسیار شایع بوده و
+                توسط شرکت های تبلیغاتی زیاد استفاده می‌شود. آگاهی در خصوص این مورد و در صورت تمایل جلوگیری از آن
+                می‌تواند حریم خصوصی شما را بهتر محافظت کند.</p>
+              <h6>اطلاعات متا</h6>
+              <p>
+                برخی از فایل ها اطلاعاتی موسوم به metadata یا فراداده در خود ذخیره می‌کنند که در نگاه اول مشهود نیست.
+                همین اطلاعات می‌تواند حریم خصوصی را به خطر اندازد. بسته به نوع فایل اطلاعاتی از قبیل موقعیت جغرافیایی در
+                عکس‌ها، نام افراد در فایل های آفیس، مدل و برخی جزییات دستگاه در حال استفاده و اطلاعات مالی در فایل های
+                اکسل و مشابه.
+              </p>
+              <h6>IP</h6>
+              <p>
+                آدرس IP شما بخشی از ردپای دیجیتال شماست. وب‌سایت‌ها می‌توانند از آدرس IP شما برای شناسایی شما و ردیابی
+                فعالیت‌های آنلاین شما استفاده کنند.آدرس IP شما می‌تواند برای تخمین موقعیت مکانی شما استفاده شود. از طرفی
+                وب‌سایت‌ها و اپلیکیشن‌ها می‌توانند از آدرس IP شما برای مسدود کردن دسترسی شما به دلایلی همچون تحریم به
+                وب‌سایت
+                خوداستفاده کنند.
+              </p>
+
+              <div class="accordion" id="accordionDefault">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">چطور موقعیت مکانی از روی آدرس آی‌پی پیدا
+                        می‌شود؟</a> </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionDefault">
+                    <div class="card-body">
+                      <p>
+                        تخصیص آدرس‌های آی‌پی عمومی به موقعیت‌های جغرافیایی توسط سازمان‌های منطقه‌ای تخصیص اینترنت (RIR)
+                        صورت می‌گیرد. این سازمان‌ها مسئول تخصیص بلوک‌های آدرس آی‌پی به نهادهای مختلف در مناطق جغرافیایی
+                        خود هستند. این سازمان 5 شعبه در 5 قاره جهان دارن که هر شعبه به نوبه خود عملیات تخصیص را حسب
+                        قواعدی به کشورهای آن قاره انجام می‌دهد. بر همین اساس یک الگوی تفکیک آدرس پدید می‌آید که مشخص
+                        می‌کند آی پی در کدام شهر است.
+                      </p>
+                      <p>
+                        برای تعیین موقعیت جغرافیایی، پایگاه‌های داده‌ای ساخته شده‌اند که اطلاعات تخصیص داده شده توسط
+                        RIRها و شرکت های ارائه دهنده اینترنت را نگهداری می‌کنند. این پایگاه‌های داده مرتباً به‌روز
+                        می‌شوند تا تغییرات جدید را منعکس کنند. برای فهمیدن این مورد نیز ابزارهایی به صورت عمومی در دسترس
+                        است. کافی است در گوگل عبارت IP Location را جستجو کنید.
+
+                        از طرفی شرکت های ارائه دهنده اینترنت می دانند که هر آدرس آی پی مربوط به که شخصی است و اگر یک
+                        نهاد قضایی از آنها استعلام کند بدان پاسخ خواهند گفت.
+                      </p>
+                      <p>
+                        یافتن موقعیت مکانی دقیق (مختصات) از طریق آدرس IP همیشه امکان پذیر نیست. دقت روش های مختلف می
+                        تواند متفاوت باشد. افراد و سازمان هایی می توانند از تکنیک هایی (مثل VPN) برای پنهان کردن آدرس IP
+                        خود برای جلوگیری از ردیابی موقعیت مکانی استفاده کنند.
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h6>WhoIS</h6>
+              <p>
+                WHOIS (Who Is) یک پروتکل است که برای یافتن اطلاعات مربوط به مالک یک دامنه اینترنتی استفاده می‌شود. این
+                اطلاعات
+                شامل نام، آدرس، شماره تلفن و آدرس ایمیل مالک دامنه می‌شود.
+              </p>
+              <p>
+                فرض کنید شما یک وب‌سایت با نام "example.com" را ثبت می‌کنید. اطلاعات WHOIS برای این دامنه شامل نام،
+                آدرس، شماره تلفن و آدرس ایمیل شما خواهد بود. هر کسی می‌تواند این اطلاعات را با استفاده از یک ابزار
+                جستجوی WHOIS پیدا کند.
+              </p>
+              <h6>اطلاعات ثبتی و سِجِلی</h6>
+              <p>
+                اطلاعات ثبتی و سِجلی (registry information) به اطلاعاتی اطلاق می‌شود که در مورد افراد و اموال در سوابق
+                دولتی یا خصوصی ثبت می‌شود. این اطلاعات شامل نام، آدرس، تاریخ تولد، شماره تلفن، اطلاعات املاک و مستغلات و
+                سوابق جنایی می‌شود.
+              </p>
+              <p>
+                فرض کنید شما در یک شبکه اجتماعی ثبت نام می‌کنید و نام و آدرس خود را وارد می‌کنید. این اطلاعات بخشی از
+                ردپای دیجیتال شما می‌شود. هر کسی می‌تواند این اطلاعات را با استفاده از موتور جستجو پیدا کند.
+
+                اگر اطلاعات ثبتی و سجلی شما به صورت آنلاین در دسترس باشد، هر کسی می‌تواند با جستجوی نام شما، این اطلاعات
+                را پیدا کند و آنها را با اطلاعاتی که از ردپای دیجیتال شما جمع‌آوری کرده است، ترکیب کند. این می‌تواند
+                منجر به نقض حریم خصوصی شما شود.
+              </p>
+              <p>می‌توانید از موتورهای جستجو برای یافتن اطلاعات ثبتی و سجلی در مورد افراد و املاک استفاده کنید.</p>
+              <h6>استفاده از شبکه‌های اجتماعی</h6>
+              <p>
+                استفاده از شبکه‌های اجتماعی، لایک کردن، نظر دادن و ارسال محتوا از شما ردی بر جای می‌گذارد که در بلند مدت
+                می‌تواند در
+                شناسایی هویت یا شناخت بهتر شما توسط دیگران مورد استفاده قرار گیرد.
+              </p>
+              <h6>نشت اطلاعات</h6>
+              <p>
+                نشت اطلاعات (data breach) به دسترسی غیرمجاز به اطلاعات اطلاق می‌شود که می‌تواند شامل اطلاعات شخصی،
+                اطلاعات مالی، اطلاعات سلامتی یا سایر اطلاعات حساس باشد. نشت اطلاعات می‌تواند تاثیرات مخربی بر افراد،
+                سازمان‌ها و جامعه داشته باشد. از اطلاعات نشت شده برای مصارف تبلیغاتی یا فریب افراد(<a
+                  href="#ch2_45">فیشینگ</a>) و <a href="#ch2_40">مهندسی
+                  اجتماعی</a> استفاده می‌شود.
+              </p>
+              <p>
+                در فروردین 1399، اطلاعات شخصی میلیون‌ها میلیون ایرانی شامل نام، نام خانوادگی، کد ملی، آدرس و شماره تلفن
+                در یک
+                انجمن آنلاین هک و منتشر شد. در اسفند 1400، اطلاعات سفر 50 میلیون کاربر اسنپ شامل مسیرهای سفر، زمان سفر و
+                اطلاعات تماس نشت و منتشر شد. در اردیبهشت 1401، اطلاعات شخصی 5 میلیون کاربر دیجی‌کالا شامل نام، نام
+                خانوادگی، آدرس و شماره تلفن نشت و منتشر شد.
+
+              </p>
+              <h6>Google Hacks & Dorks</h6>
+              <p>
+                Google Hacks & Dorks (هک‌ها و دورک‌های گوگل) مجموعه‌ای از تکنیک‌های جستجوی پیشرفته هستند که به شما امکان
+                می‌دهنداطلاعات پنهان و حساس را در اینترنت پیدا کنید. این اطلاعات می‌توانند شامل اطلاعات شخصی، اطلاعات
+                مالی،
+                اطلاعات امنیتی و موارد دیگر باشند.
+              </p>
+              <h6>Web Archive</h6>
+              <p>
+                <a href="https://wayback-api.archive.org/" target="_blank">Wayback Machine</a> (ماشین زمان وب) یک آرشیو
+                آنلاین است که نسخه‌های قبلی وب‌سایت‌ها را ذخیره می‌کند. این
+                ابزار به شما امکان می‌دهد به گذشته وب سفر کنید و ببینید که وب‌سایت‌ها در طول زمان چگونه تغییر کرده‌اند.
+              </p>
+              <p>فرض کنید شما به دنبال اطلاعاتی در مورد یک محصول هستید که قبلاً در وب‌سایت یک شرکت دیده اید. وب‌سایت
+                شرکت ممکن است از آن زمان تغییر کرده باشد یا اطلاعات مربوط به محصول حذف شده باشد. شما می‌توانید از
+                Wayback Machine برای یافتن نسخه قدیمی وب‌سایت و مشاهده اطلاعات محصول استفاده کنید.</p>
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch4_02">
+              <h2>وب پنهان – Deep Web</h2>
+              <p>فرض کنید اینترنت مثل یک آپارتمان بزرگ باشد. وب سطحی (Surface Web) مثل لابی است که همه می‌توانند به آن
+                دسترسی داشته باشند. در این لابی، می‌توانید وب‌سایت‌های عمومی، شبکه‌های اجتماعی، موتورهای جستجو و ... را
+                پیدا کنید.
+
+                اما بخش‌های دیگری از این آپارتمان هم وجود دارند که به روی همه باز نیستند. این بخش‌ها، وب پنهان یا دیپ وب
+                نامیده می‌شوند.</p>
+              <p>
+                بخش‌هایی از شبکه وب هستند که محتویات آن به هر دلیلی توسط موتورهای جستجوی استاندارد نشان‌داده نمی‌شوند.
+
+                مثل سایت‌هایی که ثبت نام و ورود نیاز دارند.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch4_03">
+              <h2>وب تاریک – Dark Web</h2>
+              <p>
+                به شبکه‌ای گفته می‌شود که در دسترس عموم نبوده و بیشتر برای مقاصد غیرقانونی مورد استفاده قرار می‌گیرد.
+                ردیابی فعالیت‌های آن و شناسایی افراد در آن دشوار یا غیرممکن است.
+
+                در این شبکه اطلاعات جامعی نهفته شده که افراد ناشناس آن‌ها را مدیریت می‌کنند. فروشندگان مواد مخدر، هکرها،
+                تروریست‌ها ،قاتل ها و افراد سودجو غالباً این دسته از افراد را تشکیل می‌دهند. دارک وب بخش کوچکی از وب
+                پنهان است.
+
+              </p>
+              <p>
+                دسترسی به وب تاریک ساده نیست و به ابزارها و نرم‌افزارهای خاص مانند <a
+                  href="https://www.torproject.org/">Tor</a> نیاز دارید. Tor مرورگری است که
+                ترافیک شما را از طریق شبکه‌ای از سرورها در سراسر جهان مسیردهی می‌کند و آدرس IP شما را پنهان می‌کند.
+              </p>
+              <p>
+                <b>خطرات وب تاریک:</b>
+              <ul>
+                <li>
+                  فعالیت‌های غیرقانونی: همانطور که گفته شد، وب تاریک به پلتفرمی برای فعالیت‌های غیرقانونی تبدیل شده است.
+                  اگر وارد این بخش شوید، ممکن است مرتکب جرم شوید یا قربانی جرم قرار بگیرید.
+                </li>
+                <li>
+                  محتوای نامناسب: قرار گرفتن در معرض محتوای خشونت‌آمیز، نفرت‌انگیز و غیراخلاقی می‌تواند آسیب‌های روحی و
+                  روانی برای شما به همراه داشته باشد.
+                </li>
+                <li>
+                  حریم خصوصی: حتی با استفاده از Tor، حریم خصوصی شما به طور کامل تضمین نمی‌شود. هکرها یا مجرمان سایبری
+                  ممکن است بتوانند اطلاعات شما را ردیابی کنند.
+                </li>
+                <li>
+                  بدافزار: وب تاریک مملو از بدافزارها و ویروس‌ها است که می‌تواند به دستگاه شما آسیب برساند و اطلاعات شما
+                  را سرقت کند.
+                </li>
+              </ul>
+              </p>
+              <p>
+                <b>مزایای وب تاریک:</b>
+              <ul>
+                <li>
+                  آزادی بیان: وب تاریک می‌تواند فضایی برای آزادی بیان و به اشتراک گذاشتن اطلاعاتی باشد که در وب سطحی
+                  سانسور می‌شوند.
+                </li>
+                <li>
+                  حریم خصوصی: وب تاریک می‌تواند به عنوان ابزاری برای محافظت از حریم خصوصی شما در برابر نظارت و ردیابی
+                  آنلاین استفاده شود.
+                </li>
+                <li>
+                  دسترسی به اطلاعات: وب تاریک می‌تواند به شما امکان دسترسی به اطلاعاتی را بدهد که در وب سطحی به راحتی
+                  قابل دسترس نیست.
+                </li>
+              </ul>
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch4_04">
+              <h2>وب اسکرپینگ – Web Scraping</h2>
+              <p>
+                فرآیندی است که در آن اطلاعات از صفحات وب به صورت خودکار استخراج می‌شود. این کار با استفاده از برنامه‌های
+                کامپیوتری انجام می‌شود که می‌توانند صفحات وب را تجزیه و تحلیل کرده و اطلاعات مورد نظر را استخراج کنند.
+              </p>
+              <p>
+                <b>کاربردهای وب اسکرپینگ:</b><br>
+                جمع‌آوری داده‌ها: وب اسکرپینگ می‌تواند برای جمع‌آوری داده‌ها از وب‌سایت‌های مختلف، مانند قیمت محصولات،
+                اخبار و اطلاعات مربوط به بازار استفاده شود.<br>
+                استخراج اطلاعات: وب اسکرپینگ می‌تواند برای استخراج اطلاعات خاص از صفحات وب، مانند آدرس ایمیل، شماره تلفن
+                و اطلاعات تماس استفاده شود.<br>
+                اتوماسیون وظایف: وب اسکرپینگ می‌تواند برای اتوماسیون وظایف خسته‌کننده و تکراری، مانند پر کردن فرم‌ها و
+                ثبت نام در وب‌سایت‌ها استفاده شود.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  بدست آوردن داده و تبدیل آن به اطلاعات از سایت های مشهور دیگر از عمده نیازهایی است که باعث می شود
+                  بسیاری از افراد یا کسب و کارها اقدام به وب اسکرپینگ کرده و اطلاعات انبوهی استخراج کنند. به عنوان مثال
+                  سایت های دیوار یا دیجیکالا حاوی اطلاعات ارزشمندی در خصوص املاک و کالاهاست که تحلیل آن سرنخ های
+                  ارزشمندی به افراد می‌دهد.
+
+                </small>
+              </div>
+              <p>
+                <b>مزایای وب اسکرپینگ:</b><br>
+                صرفه‌جویی در زمان: وب اسکرپینگ می‌تواند وظایف خسته‌کننده و تکراری را به صورت خودکار انجام دهد و در زمان
+                شما صرفه‌جویی کند.<br>
+                افزایش کارایی: وب اسکرپینگ می‌تواند به شما کمک کند تا کارآمدتر عمل کنید و به اطلاعات مورد نیاز خود
+                سریع‌تر دسترسی پیدا کنید.<br>
+                کاهش هزینه‌ها: وب اسکرپینگ می‌تواند به شما کمک کند تا هزینه‌های خود را با حذف نیاز به کارکنان برای انجام
+                وظایف خسته‌کننده و تکراری کاهش دهید.
+              </p>
+              <b>معایب وب اسکرپینگ:</b><br>
+              غیرقانونی بودن: وب اسکرپینگ از برخی وب‌سایت‌ها غیرقانونی است.
+              غیر اخلاقی بودن: وب اسکرپینگ می‌تواند در برخی موارد غیر اخلاقی باشد، مانند زمانی که برای جمع‌آوری
+              اطلاعات شخصی افراد بدون رضایت آنها استفاده شود.
+              دشواری: وب اسکرپینگ می‌تواند دشوار باشد و نیاز به دانش برنامه‌نویسی دارد.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch4_05">
+              <h2>اَدِلّه الکترونیکی</h2>
+              <p>
+                هرگونه داده‌ای که در قالب دیجیتال ذخیره شده و می‌تواند در یک فرایند قضایی به عنوان مدرک مورد استفاده
+                قرار گیرد، "دلیل الکترونیکی" نامیده می‌شود. این نوع ادله شامل طیف گسترده‌ای از اطلاعات می‌شود.
+              </p>
+              <p>
+                <b>مزایا:</b><br>
+                قابلیت اثبات: ادله الکترونیکی می‌توانند شواهد قوی و قابل اعتمادی برای اثبات وقوع یک جرم یا نقض قانون
+                باشند.<br>
+                قابلیت دسترسی: این نوع ادله به راحتی قابل ذخیره، بازیابی و اشتراک‌گذاری هستند.<br>
+                قابلیت تجزیه و تحلیل: می‌توان از ابزارهای تخصصی برای تجزیه و تحلیل ادله الکترونیکی و استخراج اطلاعات
+                مفید از آنها استفاده کرد.
+              </p>
+              <p>
+                <b>معایب:</b></br>
+                قابلیت جعل: ادله الکترونیکی می‌توانند به راحتی جعل یا دستکاری شوند.<br>
+                قابلیت فساد: این نوع ادله می‌توانند به راحتی از بین بروند یا آسیب ببینند.<br>
+                حریم خصوصی: جمع‌آوری و استفاده از ادله الکترونیکی می‌تواند به حریم خصوصی افراد خدشه وارد کند.
+
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  ادله، جمع دلیل و در لغت به معنای راهنما است.
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch4_06">
+              <h2>قابلیت جعل ادله الکترونیک</h2>
+              <p>
+                اسناد الکترونیک همواره قابل استناد در محاکم قضایی نیستند، چرا که امکان دارد برخی جعل شده باشند یا با
+                تغییراتی همراه شده باشند که حقیقت را پنهان کند. تشخیص این امر نیاز به تخصص و بررسی توسط کارشناس دارد.
+              </p>
+              <p>
+                <b>روش‌های جعل ادله الکترونیکی:</b><br>
+                تغییر تاریخ و زمان: جاعلان می‌توانند تاریخ و زمان ایجاد یا اصلاح فایل‌های دیجیتال را تغییر دهند.<br>
+                تغییر محتوا: جاعلان می‌توانند متن، تصاویر یا ویدئوهای موجود در فایل‌های دیجیتال را تغییر دهند.<br>
+                افزودن یا حذف اطلاعات: جاعلان می‌توانند اطلاعاتی را به فایل‌های دیجیتال اضافه یا از آنها حذف کنند.<br>
+                ایجاد جعلی: جاعلان می‌توانند فایل‌های دیجیتال جعلی ایجاد کنند که به نظر واقعی می‌رسند.<br>
+
+              </p>
+              <p>
+                <b>راهکارهای مقابله با جعل:</b><br>
+                استفاده از رمزنگاری: رمزنگاری می‌تواند از تغییر و دستکاری محتوا ی فایل‌های دیجیتال جلوگیری کند.<br>
+                استفاده از امضای دیجیتال: امضای دیجیتال می‌تواند اصالت و صحت فایل‌های دیجیتال را تأیید کند.<br>
+                ذخیره سازی امن: ذخیره سازی امن ادله الکترونیکی می‌تواند از دسترسی غیرمجاز و دستکاری آنها جلوگیری
+                کند.<br>
+                تجزیه و تحلیل تخصصی: تجزیه و تحلیل تخصصی ادله الکترونیکی توسط متخصصان می‌تواند به شناسایی جعلی بودن آنها
+                کمک کند.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+            <!-- End Chapter 4
+		============================ -->
+
+            <!-- Begin Chapter 5
+		============================ -->
+            <section id="chapter_05">
+              <h2 class="chapter-title">فصل پنجم: بلاکچِین و فناوری‌های مالی</h2>
+              <p>در حال حاضر، <a href="#ch5_10">بلاک‌چین</a> و فناوری‌های مالی (FinTech) در مراحل ابتدایی توسعه خود
+                هستند، اما آینده این
+                فناوری‌ها روشن و
+                امیدوارکننده است. با توجه به اهمیت این موضوع و محبوبیت روزافزون این مباحث در این فصل به مرور برخی مفاهیم
+                این حوزه می پردازیم.</p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_01">
+              <h2>فین‌تک یا فناوری مالی - Fintech</h2>
+              <p>
+                فرض کنید می‌توانید پولتان را بدون نیاز به بانک، به صورت آنی و با کارمزد کم جابجا کنید، وام بگیرید،
+                سرمایه‌گذاری کنید و حتی هویتتان را به صورت امن و دیجیتال اثبات کنید. این دنیای جدید فناوری مالی یا
+                فین‌تک است.
+              </p>
+              <p>
+                به معنای کاربرد نوآورانه فناوری در ارائه خدمات مالی است. فین‌تک معادل Financial Technology یا FinTech
+                صنعتی در فضای اقتصادی است و به کمپانی‌هایی اشاره دارد که با کاربرد تکنولوژی تلاش می‌کنند خدمات مالی را
+                کارآمدتر کنند.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_05">
+              <h2>مثال‌هایی از فین‌تک</h2>
+              <p>
+              <ul>
+                <li>Payment - پرداخت</li>
+                <li>پول و ارزهای رمزنگاری شده مانند بیت‌کوین</li>
+                <li>WealthTech - ولث‌تک یا کسب‌وکارهای فناوری مربوط به بورس و سرمایه‌گذاری</li>
+                <li>مدیریت مالی شخصی</li>
+                <li>LendTech - قرض دادن و تأمین سرمایه جمعی</li>
+                <li>Remittance - انتقال بین‌المللی پول یا رمیتنس‌ها</li>
+                <li>بانکداری روزمره و بانک‌های بدون شعبه</li>
+                <li>InsurTech - اینشورتک یا کسب‌وکارهای فناوری بیمه</li>
+                <li>RegTech - یا کسب‌وکارهای مربوط به قانون‌گذاری</li>
+                <li>ربات های ترید و اکسپرت ها</li>
+              </ul>
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_10">
+              <h2>بلاکچین یا زنجیره بلوکی – Blockchain</h2>
+              <p>
+                سیستمی برای ثبت و ضبط داده‌ها است. این داده‌ها می‌توانند برای نمونه تراکنش‌های بانکی، اسناد
+                مالکیت، قرارها، پیام‌های شخصی یا دیگر اطلاعات مرتبط باشند.
+              </p>
+              <p>
+                ویژگی زنجیرهٔ بلوکی این است که کار ذخیرهٔ این داده‌ها بدون وجود یک مدیر و صاحب‌اختیار مرکزی امکان‌پذیر
+                است و نمی‌توان با تخریب یک نقطهٔ مرکزی داده‌های ذخیره‌شده را تحریف یا نابود کرد. معروف‌ترین کاربرد
+                زنجیرهٔ بلوکی، استفاده از آن در شبکه رمز ارز بیت‌کوین است.
+              </p>
+              <p>
+                حال مجدداً فرض کنید یک دفترچه ثبت بزرگ و مشترک دارید که در آن تمام تراکنش‌ها و اطلاعات به طور همزمان
+                برای همه قابل
+                مشاهده و به روز است. این دفترچه غیرقابل تغییر و امن است و هیچ کس نمی‌تواند به تنهایی آن را دستکاری کند.
+
+                این مثال ها نشان دهنده همان مفهوم اصلی بلاکچین هستند.
+              </p>
+              <p>
+                به زبان ساده‌تر:
+                <br>
+                بلاکچین مانند یک زنجیره از بلوک‌ها است که هر کدام حاوی اطلاعاتی مانند تراکنش‌ها، زمان و تاریخ است.<br>
+                هر بلوک به بلوک قبلی خود متصل است و یک زنجیره غیرقابل تغییر را ایجاد می‌کند.<br>
+                این زنجیره بر روی شبکه‌ای از رایانه‌ها به نام "گره‌ها" ذخیره می‌شود و هیچ مرجع مرکزی برای کنترل آن وجود
+                ندارد.<br>
+                از رمزنگاری برای ایمن‌سازی داده‌ها و تضمین صحت تراکنش‌ها استفاده می‌شود.<br>
+              </p>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  این روزها به دلیل محبوبیت و توجه زیادی که به رمرزارزها می‌شود نیاز است تا به صورت کلی با فناوری
+                  بنیادین آنها یعنی بلاکچین آشنا بود.
+                </small>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_15">
+              <h2>رمزارز - Cryptocurrency</h2>
+              <p>
+                یکی از گونه‌های ارز دیجیتال است که از فناوری رمزنگاری در طراحی آن استفاده شده و معمولاً به صورت نامتمرکز
+                اداره می‌شود.
+                رمزارزها معمولاً به صورت غیر متمرکز کنترل می‌شوند (مثال: بیت کوین غیر متمرکز) و از این رو در بسیاری
+                موارد مقابل نظام‌های بانکداری سنتی یا متمرکز قرار می‌گیرند. بیت‌کوین اولین و محبوب‌ترین رمزارز است.
+
+              </p>
+              <p>برخلاف ارزهای سنتی مانند اسکناس و سکه، رمزارزها توسط هیچ مرجع مرکزی مانند بانک یا دولت کنترل نمی‌شوند.
+
+                تقلب در تراکنش‌های رمزارز بسیار دشوار است. همه تراکنش‌ها در بلاک چین ثبت می‌شوند و برای همه قابل مشاهده
+                هستند. تراکنش‌های رمزارز سریع و ارزان هستند. هر کسی در هر نقطه از جهان می‌تواند به رمزارز دسترسی داشته
+                باشد.
+              </p>
+              <p>
+                ارزش رمزارزها می‌تواند به شدت نوسان داشته باشد. قوانین مربوط به رمزارز در حال توسعه هستند و هنوز در
+                بسیاری از کشورها مشخص نیستند. با این حال
+                رمزارزها هنوز در همه جا به طور گسترده پذیرفته نشده‌اند.
+              </p>
+              <p>
+                از سایر رمزارزهای معروف دیگر می‌توان به اتریوم و تتر اشاره کرد. تتر یک ارز دیجیتال یا استیبل کوین است که
+                به طور خاص برای ثابت نگه داشتن ارزش آن معادل یک دلار آمریکا طراحی شده است.
+              </p>
+              <b>Stablecoin</b><br>
+              <p>
+                استیبل کوین نوعی ارز دیجیتال است که طراحی شده تا ارزش آن نسبت به دارایی یا ارزی دیگر ثابت بماند. این
+                دارایی یا ارز مرجع معمولاً دلار آمریکا، یورو، طلا یا حتی یک سبد از دارایی‌ها است. هدف اصلی استیبل
+                کوین‌ها کاهش نوسانات قیمتی است که معمولاً در ارزهای دیجیتال مانند بیت‌کوین و اتریوم مشاهده می‌شود. در
+                نتیجه، استیبل کوین‌ها ترکیبی از مزایای ارزهای دیجیتال (مانند سرعت و امنیت) و ثبات ارزهای فیات را ارائه
+                می‌دهند، که آنها را برای استفاده‌های گسترده‌تر و روزمره مناسب می‌سازد.
+              </p>
+              <p>
+                <b>آلت کوین - Altcoin</b><br>
+                آلت کوین، مخفف "ارز دیجیتال جایگزین" (Alternative Coin)، به هر ارز دیجیتالی به جز بیت کوین گفته می‌شود.
+                بیت کوین اولین و شناخته‌شده‌ترین ارز دیجیتال بود و راه را برای ظهور ارزهای دیجیتال دیگر با ویژگی‌ها و
+                کاربردهای منحصر به فرد خود باز کرد.
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  ارز موسوم به فیات نوعی پول است که توسط دولت‌ها صادر می‌شود و پشتوانه ذاتی مانند طلا یا نقره ندارد.
+                  ارزش این نوع
+                  توسط حکم دولت و اعتماد مردم به آن تعیین می‌شود. نمونه‌هایی از ارزهای فیات شامل ریال، یورو و دلار
+                  آمریکا هستند.
+                  <br>
+                  <br>
+                  واژه "فیات" از کلمه لاتین "fīat" به معنای "بگذارید شود" یا "باقی بماند" گرفته شده است. این کلمه به
+                  دستوری از سوی یک مقام عالی مانند امپراتور یا پادشاه اشاره دارد که چیزی را به عنوان حقیقت یا قانون مقرر
+                  می‌کند.
+
+                  در زمینه پول، ارز فیات پولی است که توسط حکم یا فرمان دولت به عنوان پول قانونی تعیین می‌شود.
+                </small>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_20">
+              <h2>کیف پول دیجیتال – Digital Wallet</h2>
+              <p>
+                به محل ذخیره‌سازی رمزارز در شبکه بلاکچین گفته می‌شود. می‌توان گفت کیف پول در ارزهای رمز نگاری شده مانند
+                حساب بانکی در ارزهای مانند دلار، ریال و یورور است.
+              </p>
+              <p>
+                به زبان ساده، کیف پول یک برنامه نرم‌افزاری است که با بلاکچین همگام سازی می‌شود. از طریق این همگام سازی،
+                می‌توان مقدار رمزارز رمزنگاری شده (دریافت و پرداخت شده) یک کیف پول خاص را مشاهد کرد.
+
+                هر کیف پول دارای کلید خصوصی و کلیدی عمومی است. کلید عمومی، در حقیقت همان آدرس کیف پول به مثابه شماره
+                حساب بانکی و کلید خصوصی همان رمز عبور است.
+              </p>
+              <p>
+                کیف پول‌ها انواع مختلفی دارند، که نمونه‌های فیزیکی به سرد و نمونه‌های نرم‌افزاری به گرم شهرت دارند.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_25">
+              <h2>توکن - Token</h2>
+              <p>
+                به طور کلی، توکن نوعی دارایی دیجیتال است که بر بستر بلاک‌چین‌های موجود، به ویژه اتریوم، ساخته می‌شود.
+                این دارایی‌ها، کاربردهای متنوعی داشته و می‌توانند نمایانگر طیف وسیعی از موارد باشند.
+              </p>
+              <p>
+                مثالی برای درک بهتر:
+                <br>
+                فرض کنید در حال انجام یک بازی آنلاین هستید. در این بازی، واحد پولی به نام "توکن" وجود دارد که با استفاده
+                از آن می‌توانید اقدام به خرید آیتم‌ها و قابلیت‌های جدید نمایید. این توکن‌ها صرفاً در محیط بازی قابل
+                استفاده بوده و کاربردی در دنیای واقعی ندارند.
+              </p>
+              <p>
+                انواع توکن:
+                <br>
+                توکن‌ها بر اساس کارکرد و کاربردشان، به دسته‌های مختلفی تقسیم می‌شوند که از جمله آنها می‌توان به موارد
+                ذیل اشاره کرد:
+                <br>
+                <b>توکن‌های کاربردی:</b> این نوع توکن‌ها برای دسترسی به خدمات و یا انجام تراکنش‌ها در یک پلتفرم خاص مورد
+                استفاده قرار می‌گیرند. به عنوان مثال، توکن‌های بازی‌های آنلاین در این دسته جای می‌گیرند.<br>
+                <b>توکن‌های اوراق بهادار:</b> این توکن‌ها، نماینده مالکیت یک دارایی واقعی مانند سهام یا املاک و مستغلات
+                هستند.<br>
+                <b>توکن‌های حاکمیتی:</b> دارندگان این توکن‌ها، حق رای در تصمیم‌گیری‌های مربوط به یک پروژه را دارا خواهند
+                بود.
+              </p>
+              <p>
+
+                تفاوت توکن و ارز دیجیتال:
+                <br>
+                یک تمایز کلیدی میان توکن و ارز دیجیتال، وجود یا عدم وجود بلاک‌چین اختصاصی است. ارزهای دیجیتال مانند
+                بیت‌کوین، بلاک‌چین خود را دارا می‌باشند، در حالی که توکن‌ها بر روی بلاک‌چین‌های موجود (مانند اتریوم)
+                ساخته می‌شوند.
+                ارزش تمام توکن‌ها یکسان نیست.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_30">
+              <h2>جرائم مرتبط با رمز ارزها</h2>
+              <p>
+                ماهیت غیرمتمرکز و شفاف نبودن کامل تراکنش‌های رمز ارزی، بستر مناسبی را برای سودجویان و مجرمان ایجاد کرده
+                تا با سوء استفاده از این فناوری، به اقدامات غیرقانونی دست بزنند.
+              </p>
+              <p>
+                <b>پولشویی</b><br>
+                ماهیت غیرمتمرکز و ناشناس بودن تراکنش‌های رمز ارزی، آنها را به ابزاری جذاب برای پولشویی و تأمین مالی
+                تروریسم تبدیل کرده است.
+                مجرمان می‌توانند با استفاده از رمز ارزها، پول‌های نامشروع خود را به گونه‌ای جابجا و پنهان کنند که ردیابی
+                آنها توسط مراجع قانونی دشوار باشد.
+              </p>
+              <p>
+                فرار مالیاتی
+              </p>
+              <p>
+
+              </p>
+              <p>
+                <b>هک و سرقت</b><br>
+                هکرها با نفوذ به صرافی‌ها، کیف پول‌های دیجیتال و دیگر پلتفرم‌های مرتبط با رمز ارزها، اقدام به سرقت
+                دارایی‌های رمز ارزی کاربران می‌کنند. این امر به دلیل پیچیدگی‌های فنی و فقدان ضمانت‌های لازم در برخی از
+                این پلتفرم‌ها، به راحتی قابل وقوع است.
+              <p>
+                در فیشینگ رمز ارزی، مجرمان با ارسال ایمیل‌ها، پیامک‌ها یا ایجاد صفحات وب جعلی، کاربران را فریب می‌دهند
+                تا اطلاعات ورود به کیف پول‌های دیجیتال یا حساب‌های صرافی خود را به اشتراک بگذارند. پس از سرقت این
+                اطلاعات، مجرمان می‌توانند به دارایی‌های رمز ارزی قربانیان دسترسی پیدا کنند.
+              </p>
+              </p>
+              <p>
+                <b>باج‌افزار</b><br>
+                باج‌افزارهای رمز ارزی نوعی بدافزار هستند که اطلاعات یا سیستم‌های قربانی را به گروگان گرفته و در ازای
+                پرداخت مبالغی به صورت رمز ارز، آنها را آزاد می‌کنند. این نوع باج‌افزارها در سال‌های اخیر به شدت رواج
+                یافته و به تهدیدی جدی برای افراد و سازمان‌ها تبدیل شده‌اند.
+              </p>
+              <p>
+                <b>عرضه اولیه سکه تقلبی (ICO Scam):</b><br>
+                در این نوع کلاهبرداری، پروژه‌های جعلی با وعده‌های غیرواقعی و اغراق‌آمیز، اقدام به جمع‌آوری سرمایه از
+                طریق عرضه اولیه سکه (ICO) می‌کنند. پس از جمع‌آوری سرمایه، پروژه ناپدید شده و سرمایه‌گذاران متحمل ضرر و
+                زیان می‌شوند.
+              </p>
+              <p>
+                <b>کلاهبرداری رمزارزها (روشهای هرمی یا پانزی، سیگنال فروشی)</b><br>
+                یکی از شایع‌ترین جرائم در این حوزه، کلاهبرداری است. مجرمان از طریق روش‌های مختلفی مانند ایجاد
+                وب‌سایت‌های جعلی، وعده‌های پوچ و غیرواقعی، یا سوء استفاده از هویت افراد، اقدام به فریب قربانیان و سرقت
+                دارایی‌های رمز ارزی آنها می‌کنند. کلاهبرداری یونیک فاینانس از معروفترین کلاهبرداری رخ داده در ایران است.
+              </p>
+              <p>
+                <b>معاملات غیرقانونی:</b><br>
+                از رمز ارزها می‌توان برای خرید و فروش کالاها و خدمات غیرقانونی مانند مواد مخدر، سلاح و محتوای نامناسب
+                استفاده کرد. انجام چنین معاملاتی در وب تاریک مرسوم است.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_35">
+              <h2>صرافی رمزارز - Cryptocurrency Exchange</h2>
+              <p>
+                صرافی رمزارز محلی (آنلاین) برای خرید و فروش رمزارزها مانند بیت کوین، اتریوم و تتر است.
+
+                به زبان ساده:
+                صرافی رمزارز مثل یک بازار برای خرید و فروش سکه‌های دیجیتال است.
+                شما می‌توانید با پول خود رمزارز بخرید و یا رمزارزهای خود را به پول تبدیل کنید.
+                صرافی‌ها کارمزد دریافت می‌کنند، مثل کارمزد مغازه‌ها.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch5_40">
+              <h2>استخراج رمزارز - Mining</h2>
+              <p>
+                استخراج رمز ارز فرآیندی برای تأیید تراکنش‌ها و ایجاد رمز ارزهای جدید است. استخراج کنندگان از کامپیوترهای
+                قدرتمند برای حل مسائل پیچیده ریاضی استفاده می‌کنند.
+
+                اولین کامپیوتری که مسأله را حل کند، بلاک جدیدی به بلاکچین اضافه می‌کند و به عنوان پاداش، رمز ارز جدید
+                دریافت می‌کند.
+
+                استخراج رمز ارز شبیه به استخراج طلا است:
+                به تلاش و انرژی زیادی نیاز دارد.
+                می‌تواند سودآور باشد، اما ریسک هم دارد.
+
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+            <!-- End Chapter 5
+		============================ -->
+
+            <!-- Begin Chapter 6
+		============================ -->
+            <section id="chapter_06">
+              <h2 class="chapter-title">فصل ششم: آشنایی با روال‌های کسب و کارهای اینترنتی</h2>
+              <p>درک عملکرد سرویس‌‌دهندگان آنلاین و آشنایی با برخی از مفاهیم بنیادین این حوزه دید بهتری به شما خواهد
+                داد.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_01">
+              <h2>پلتفرم یا سکو - Platform</h2>
+              <p>
+                کسب و کار پلتفرمی آنلاین مثل یک میدان یا بازار بزرگ است که در آن:
+                <br>
+                خریداران و فروشندگان می‌توانند به طور مستقیم با هم ارتباط برقرار کنند.
+                کسب و کار پلتفرمی محصول یا خدمتی را ارائه نمی‌دهد، بلکه فضایی را برای معامله بین دو طرف فراهم می‌کند.
+                کسب و کار پلتفرمی از طریق دریافت کمیسیون از هر معامله سود می‌کند.
+              </p>
+              <p>
+                مثال:<br>
+                دیجی‌کالا یک کسب و کار پلتفرمی آنلاین است که خریداران و فروشندگان را به هم متصل می‌کند.<br>
+                اسنپ یک کسب و کار پلتفرمی آنلاین است که مسافران و رانندگان را به هم متصل می‌کند.<br>
+                <a href="https://parscoders.com/?ref=2226">پارسکُدرز</a> یک پلتفرم آنلاین و بازار کار است که فریلَنسرها
+                (آزادکاران، پیمانکاران) و کارفرمایان را به هم متصل می‌کند.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_02">
+              <h2>مارکت پِلِیس – Market Place</h2>
+              <p>
+                مارکت پلیس آنلاین یک بازار مجازی است که در آن خریداران و فروشندگان می‌توانند به طور مستقیم با هم ارتباط
+                برقرار کرده و معامله انجام دهند.
+
+                به عبارت دیگر:
+                مارکت پلیس خودش محصول را ارائه نمی‌دهد، بلکه فضایی را برای خرید و فروش بین دو طرف فراهم می‌کند.
+                مارکت پلیس از طریق دریافت کمیسیون از هر معامله سود می‌کند.
+              </p>
+              <p>
+                مثال:<br>
+                دیجی‌کالا یک مارکت پلیس آنلاین است که خریداران و فروشندگان را به هم متصل می‌کند.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_03">
+              <h2>تفاوت مارکت پِلِیس با پلتفرم</h2>
+              <p>
+                مارکت پلیس و پلتفرم دو اصطلاح مرتبط هستند که گاه به جای یکدیگر استفاده می‌شوند، اما تفاوت‌هایی ظریف بین
+                آنها وجود دارد.
+
+                پلتفرم به طور کلی به زیرساختی گفته می‌شود که امکان ارائه خدمات یا محصولات را به دیگران فراهم می‌کند.
+                مارکت پلیس نوعی پلتفرم است که به طور خاص برای خرید و فروش کالا بین خریداران و فروشندگان مستقل طراحی شده
+                است.
+              <p>
+              </p>
+              به عبارت دیگر:<br>
+              هر مارکت پلیس یک پلتفرم است، اما هر پلتفرمی مارکت پلیس نیست.
+              مارکت پلیس بر معاملات تمرکز دارد، در حالی که پلتفرم می‌تواند کاربردهای مختلفی داشته باشد.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_04">
+              <h2>تواقنامه استفاده - EULA یا End-User License Agreement</h2>
+              <p>
+                توافقنامه که گاهی با عنوان قوانین سایت یا اپلیکیشن معرفی می‌شود، قراردادی بین سازنده نرم‌افزار، سایت یا
+                اپلیکیشن موبایل و کاربر نهایی است که شرایط استفاده از نرم‌افزار یا پلتفرم را مشخص می‌کند.
+
+                یک قرارداد قانونی است و کاربر با استفاده از نرم‌افزار شرایط آن را می‌پذیرد.
+              </p>
+              <p>
+                به طور کلی این توافقنامه شامل موارد زیر می‌شود:
+                مجوز استفاده از نرم‌افزار: به کاربر مجوز استفاده از نرم‌افزار را اعطا می‌کند. این مجوز می‌تواند محدود یا
+                غیرقابل انکار باشد.
+              </p>
+              <p>
+                محدودیت‌های استفاده: ممکن است محدودیت‌هایی را برای استفاده از نرم‌افزار مشخص کند، مانند ممنوعیت کپی،
+                توزیع یا مهندسی معکوس نرم‌افزار.<br>
+                مالکیت معنوی: مالکیت معنوی نرم‌افزار را برای سازنده نرم‌افزار محفوظ می‌کند.<br>
+                سلب مسئولیت: سازنده نرم‌افزار را از مسئولیت خسارات احتمالی ناشی از استفاده از نرم‌افزار معاف می‌کند.
+                قوانین حاکم: قوانین حاکم بر توافقنامه را مشخص می‌کند.
+
+              </p>
+              <div class="alert alert-info" role="alert">
+                <small>
+                  همان بخشی که در نرم افزارها، اپلیکیشن‌ها و سایت‌ها موافقت خود را با آن اعلام ‌می‌کنید بدون آنکه آن را
+                  کامل بخوانید! در برخی از سایت‌ها از این بخش با عنوان قوانین سایت نیز یاد می‌شود.
+                  <br>
+                  این توافقنامه یا قوانین در دعاوی و محاکم قضایی قابل استناد است.
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_05">
+              <h2>نماد اعتماد - eNamad</h2>
+              <p>
+                نماد اعتماد الکترونیکی یک نشان است که از طرف مرکز توسعه تجارت الکترونیکی (مرکز تتا) وابسته به وزارت صمت
+                به فروشگاه‌های اینترنتی معتبر اعطا می‌شود. این نماد به نوعی تاییدیه هویتی دولتی برای کسب و کارهای آنلاین
+                محسوب می‌شود و به مشتریان این اطمینان را می‌دهد که می‌توانند با خیال راحت از این فروشگاه‌ها خرید کنند.
+                وجود نماد اعتماد به تنهایی تضمین کننده صد درصدی معتبر بودن یک فروشگاه اینترنتی نیست.
+              </p>
+              <p>
+                برای دریافت نماد اعتماد، فروشگاه‌های اینترنتی باید شرایطی را داشته باشند، از جمله:<br>
+              <ul>
+                <li>داشتن آدرس و اطلاعات تماس معتبر</li>
+                <li>ارائه مدارک هویتی صاحب کسب و کار</li>
+                <li>رعایت قوانین و مقررات تجارت الکترونیکی</li>
+                <li>تعهد به ارائه خدمات و محصولات با کیفیت</li>
+              </ul>
+
+              </p>
+              <img src="../assets/images/enamad.png" class="img-fluid" alt="لوگوی نماد اعتماد">
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_06">
+              <h2>نهادهای صنفی</h2>
+              <p>در ایران، دو نهاد اصلی برای نمایندگی فعالان در حوزه کامپیوتر و کسب و کارهای اینترنتی وجود دارد: <br>
+                <b>
+                  <a href="https://www.irannsr.org/">سازمان نظام صنفی رایانه ای </a><i
+                    class="fas fa-external-link-alt"></i>
+                </b>
+                <br>
+                شامل کلیه فعالان حوزه ICT، اعم از تولیدکنندگان، توزیع کنندگان، ارائه دهندگان خدمات و ...
+                به طور خاص شامل کسب و کارهایی که پایه کار آنها رایانه است، حتی اگر در فضای مجازی فعالیت کنند.
+              </p>
+              <p>
+                <b>
+                  <a href="https://ecunion.ir/">اتحادیه کشوری کسب و کارهای مجازی</a><i
+                    class="fas fa-external-link-alt"></i>
+                </b>
+                <br>
+                به طور خاص شامل کسب و کارهایی که صرفا در فضای مجازی فعالیت می کنند، مانند فروشگاه های اینترنتی، استارتاپ
+                ها و ...
+                شامل کسب و کارهایی که پایه کار آنها رایانه نیست، مانند فروشندگان آنلاین پوشاک یا مواد غذایی.
+              </p>
+              <p>
+                <b>تفاوت های کلیدی</b>
+                <br>
+                دامنه فعالیت:<br>
+                سازمان نظام صنفی رایانه ای: شامل کلیه فعالان حوزه ICT، چه در فضای مجازی و چه غیر مجازی<br>
+                اتحادیه کشوری کسب و کارهای مجازی: فقط شامل کسب و کارهای اینترنتی
+                <br>
+                پایه فعالیت:<br>
+                سازمان نظام صنفی رایانه ای: فعالیت هایی که پایه آنها رایانه است<br>
+                اتحادیه کشوری کسب و کارهای مجازی: صرف فعالیت در فضای مجازی
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_07">
+              <h2>درگاه پرداخت</h2>
+              <p>
+                درگاه پرداخت، سامانه‌ای آنلاین است که به شما اجازه می‌دهد تا از طریق وب‌سایت یا اپلیکیشن موبایل خود، از
+                مشتریان خود پول دریافت کنید.
+                IPG مخفف Internet Payment Gateway یا درگاه پرداخت اینترنتی است.
+              </p>
+              <p>
+                انواع درگاه پرداخت:<br>
+                درگاه پرداخت مستقیم: در این نوع درگاه، شما مستقیماً با بانک طرف قرارداد هستید و تراکنش‌ها به طور مستقیم
+                توسط بانک انجام می‌شوند.<br>
+                درگاه پرداخت واسط: در این نوع درگاه، شما با یک شرکت واسط طرف قرارداد هستید و تراکنش‌ها توسط این شرکت
+                انجام می‌شوند.
+
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_08">
+              <h2>درگاه پرداخت و نماد اعتماد</h2>
+              <p>لازمه گرفتن و داشتن درگاه پرداخت اینترنتی داشتن نماد اعتماد است که در این بین اخذ کد مالیاتی نیز اجباری
+                است.</p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_09">
+              <h2>شکایت از کسب و کار اینترنتی در ایران</h2>
+              <p>مراحل شکایت از کسب و کار اینترنتی در ایران به نوع تخلف یا جرم و میزان ضرر و زیان بستگی دارد.
+                <br>
+                جمع آوری مدارک:
+                مدارک هویتی خود
+                مدارک مربوط به خرید یا استفاده از خدمات کسب و کار اینترنتی
+                مدارک دال بر تخلف کسب و کار اینترنتی
+                <br>
+                ۲. مراجعه به مراجع ذیصلاح:
+                <br>
+                <b>پلیس فتا:</b> در صورت ارتکاب جرم در فضای مجازی، مراجعه به پلیس فتا شکایت و در صورتی که کلاهبرداری
+                تلفنی یا
+                پیامکی باشد مراجعه به پلیس آگاهی.<br>
+                <b>سامانه نماد اعتماد یا اتحادیه کسب و کارها:</b> در صورت تخلف کسب و کار اینترنتی در زمینه ارائه کالا و
+                خدمات و درخواست داوری.<br>
+                <b>کمیسیون حل اختلاف اتاق اصناف:</b> در صورت تخلف کسب و کار اینترنتی در زمینه معاملات الکترونیکی، می
+                توانید به
+                کمیسیون حل اختلاف اتاق اصناف شکایت کنید.<br>
+                <b>مراجع قضایی:</b> در صورت وارد شدن ضرر و زیان و نیاز به دریافت غرامت، می توانید به مراجع قضایی شکایت
+                کنید.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_10">
+              <h2>حق رجوع کالا و مرجوع نمودن خرید اینترنتی</h2>
+              <p>در خرید اینترنتی، طبق ماده 37 قانون تجارت الکترونیکی مشتریان به دلیل عدم دسترسی به کالای خریداری شده
+                قبل از خرید، باید حق رجوع کالا را داشته باشند. در ایران، مشتریان حق رجوع کالا هفت روزه را در خرید
+                اینترنتی دارند. این به معنای این است که مشتریان می‌توانند کالای خریداری شده را در مدت هفت روز پس از
+                تحویل کالا و در صورتی که ضوابط مربوط به هر حوزه کالایی رعایت شده باشد به فروشنده بازگردانند.</p>
+
+              <div class="alert alert-info" role="alert">
+                <small>
+                  برخی از محصولات نرم افزاری و کالاها مثل موادغذایی و بهداشتی تحت شرایطی خاص مشمول حق رجوع می‌شوند که
+                  جزییات آن در بخش توافقنامه یا قوانین سایت یا سرویس مربوطه ذکر شده است.
+                </small>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_11">
+              <h2>شبکه شاپرک</h2>
+              <p>شبکه شاپرک یک سیستم متمرکز برای تبادل اطلاعات بین شرکت‌های پرداخت الکترونیکی و بانک‌ها است. این شبکه با
+                هدف ساماندهی و نظارت بر تراکنش‌های الکترونیکی در ایران ایجاد شده است.
+
+                به عبارت دیگر:
+                شاپرک واسطه ای بین شرکت های پرداخت و بانک ها است.
+                شاپرک تراکنش های الکترونیکی را ساماندهی و نظارت می کند.
+
+                بر همین اساس وجوه پرداختی مشتریان در درگاه های پرداخت اینترنتی مستقیماً و آنی به حساب فروشنده واریز
+                نمی‌شود و طبق ضوابط شبکه شاپرک تسویه صورت می‌پذیرد.</p>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="ch6_12">
+              <h2>سیکل تسویه حساب برای پذیرندگان اینترنتی</h2>
+              <p>انتقالات با استفاده از سامانه «پایا» برای دستور پرداخت‌های مشتریان صرفاً یک بار در روز به شرح زیر انجام
+                می‌گیرد:
+                در روزهای غیر تعطیل رسمی، انتقالات سامانه «پایا» برای تسویه تراکنش‌های کارتی «شاپرک» مربوط به روز قبل،
+                صرفاً یک بار در روز و در سیکل ساعت ۳:۴۵ بامداد پردازش و برای بانک‌های پذیرنده ارسال می‌گردد. ضمناً ریز
+                تراکنش‌های پایانه‌های فروش «شاپرک» در ساعت ۵:۰۰ بامداد در اختیار بانک‌های پذیرنده قرار می‌گیرد.
+              </p>
+              <p>
+                در روزهای تعطیل رسمی، انتقالات سامانه «پایا» برای تسویه تراکنش‌های کارتی «شاپرک» مربوط به روز قبل، صرفاً
+                یک بار در روز و در سیکل ساعت ۱۵:۴۵ پردازش و برای بانک‌های پذیرنده ارسال می‌گردد. ضمناً ریز تراکنش‌های
+                پایانه‌های فروش «شاپرک» در ساعت ۱۷:۰۰ در اختیار بانک‌های پذیرنده قرار می‌گیرد.
+              </p>
+              <p>
+                نکته: بدیهی است پس از ارسال دستور پرداخت به بانک ها در زمان مقرر شده فوق، زمان واریز به حساب پذیرندگان
+                بستگی به مقررات مبادلات پولی بانک پذیرنده دارد.
+              </p>
+
+            </section>
+
+            <hr class="divider">
+            <!-- End Chapter 6
+		============================ -->
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://mfhym-sybry-bry-hmh.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                by Disqus.</a></noscript>
+        </div>
+      </div>
+
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer
+  ============================ -->
+    <footer id="footer" class="section bg-dark footer-text-light">
+      <div class="container">
+        <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+          <li><a data-toggle="tooltip" href="https://x.com/silvercover/" target="_blank" title=""
+              data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a data-toggle="tooltip" href="https://github.com/silvercover/cyber" target="_blank" title=""
+              data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <p class="text-center">ساخته شده بر اساس قالب <a
+            href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a></p>
+        <p class="text-2 text-center mb-0">این راهنما تحت مجوز <a class="btn-link" target="_blank"
+            href="https://opensource.org/license/mit">MIT</a> منتشر شده است.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript
+============================ -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="../assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="../assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

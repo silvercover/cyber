@@ -469,22 +469,23 @@
             <hr class="divider">
 
             <section id="ch1_40">
-              <h2>آی‌پی نسخه 6 - IP v6</h2>
-              <p>IPv4 از فضای آدرسی ۳۲ بیتی (به عنوان مثال 192.168.1.100) استفاده می‌کند. این فضا اجازهٔ آدرس‌دهی حدود ۴
-                میلیارد آدرس در اینترنت را
-                می‌دهد. با توجه به این‌که امروزه بسیاری از دستگاه‌ها افزون بر کامپیوترها مانند موبایل‌ها، دوربین‌ها و
-                حتی لوازم خانگی و قاب عکس‌های دیجیتال به اینترنت متصل می‌شوند، این فضا رو به اتمام است. IP وژن 5 نداریم
-                چون تعداد آدرس های حاصل از آن کافی نیست.
+              <h2>IP v6</h2>
+              <p>IPv4 uses a 32-bit address space (for example, 192.168.1.100). This space allows for approximately 4
+                billion addresses on the internet. Given that today, many devices beyond computers, such as mobile
+                phones, cameras, and even household appliances and digital photo frames, are connecting to the internet,
+                this space is nearing exhaustion. There is no IPv5 because the number of addresses it would provide is
+                insufficient.
               </p>
               <p>
-                IPv6 از آدرس‌های 128 بیتی استفاده می‌کند که این امر تعداد آدرس‌های قابل دسترس را به طور چشمگیری افزایش
-                می‌دهد و مشکل کمبود آدرسIP را حل می‌کند.
+                IPv6 uses 128-bit addresses, which significantly increases the number of available addresses and solves
+                the problem of IP address shortage.
               </p>
               <p>
-                نمونه آدرس آی پی نسخه 6 (IPv6):
+                an IPv6 example:
                 <code class="html hljs xml">2a00:1db9:85a3:0000:0000:8a2e:0370:7334</code>
                 <br>
-                این آدرس آی پی نسخه 6 از 8 بخش 16 بیتی تشکیل شده است. هر بخش با دو نقطه (:) از بخش‌های دیگر جدا می‌شود.
+                This IPv6 address consists of 8 16-bit hexadecimal sections. Each section is separated from the others
+                by a colon (:).
               </p>
 
             </section>
@@ -492,53 +493,57 @@
             <hr class="divider">
 
             <section id="ch1_45">
-              <h2>پورت یا درگاه - Port</h2>
-              <p>پورت در شبکه مثل یک درب است که اطلاعات از طریق آن وارد یا خارج می‌شوند. هر درب شماره‌ای دارد و هر
-                برنامه یا خدمت از یک درب خاص استفاده می‌کند تا اطلاعات درست به جای درست برود.
-                وقتی شما در مرورگر وب خود، آدرس یک وب سایت را وارد می‌کنید، کامپیوتر شما از پورت 80 برای برقراری ارتباط
-                با سرور وب سایت استفاده می‌کند. با آدرس آی پی (مثل کد پستی) به کامپیوتر مقصد متصل می‌شویم، سپس با دادن
-                شماره پورت باعث اجرای نرم افزاری خاص بر روی آن سیستم مقصد می شویم.
+              <h2>Port</h2>
+              <p>A port in a network is like a door through which data enters or exits. Each door has a number, and each
+                application or service uses a specific door to ensure data goes to the right place. When you enter a
+                website address into your web browser, your computer uses port 80 to communicate with the website's
+                server. We use the IP address (like a postal code) to connect to the destination computer, and then by
+                providing the port number, we trigger a specific software to run on that destination system.
               </p>
               <p>
-                سیستم فیلترینگ یا هر نوع سیستم پالایش ترافیک می‌تواند دسترسی به پورت خاصی را مسدود یا محدود کند و بدین
-                ترتیب مانع از اجرای نرم افزارهایی خاص شود.
+                A firewall or other traffic filtering system can block access to specific ports, preventing certain
+                applications from running.
               </p>
               <p>
-                در تصویر زیر مفهوم پورت در ارتباط دو گوشی از طریق اپلیکیشن SHAREiT به تصویر کشیده شده است. در نوشتارهای
-                فنی آی‌پی و پورت با دو نقطه از هم جدا
-                نوشته می شود.
+                The diagram below visually represents the concept of a port in the context of two phones communicating
+                via the SHAREit app. Technical notations typically separate IP addresses and ports with a colon.
               </p>
-              <img src="../assets/images/port.png" class="img-fluid" alt="نمایش مفهوم پورت در شبکه">
+              <img src="../assets/images/port.png" class="img-fluid"
+                alt="Illustrating the concept of a port in a network">
 
             </section>
 
             <hr class="divider">
 
             <section id="ch1_46">
-              <h2>پهنای باند (Band Width) و سرعت اینترنت</h2>
-              <p>پهنای باند و سرعت اینترنت اگرچه مرتبط هستند، اما دو مفهوم متفاوت‌اند.
+              <h2>Band Width & Net Speed</h2>
+              <p>Bandwidth and internet speed, while related, are two different concepts.
                 <br>
-                پهنای باند: حداکثر مقدار داده‌ای که می‌تواند در یک زمان مشخص منتقل شود. مثل عرض یک لوله آب یا خیابان.
+                Bandwidth is the maximum amount of data that can be transmitted in a given period of time, similar to
+                the width of a water pipe or a road.
                 <br>
-                سرعت اینترنت: سرعت واقعی انتقال داده‌ها در یک لحظه خاص. مثل سرعت جریان آب در لوله.
+                Internet speed is the actual speed of data transfer at a particular moment, like the speed of water
+                flowing through a pipe.
                 <br>
-                پهنای باند بالاتر امکان سرعت بیشتر را فراهم می‌کند، اما عوامل دیگری نیز بر سرعت واقعی تأثیر می‌گذارند.
+                Higher bandwidth allows for faster speeds, but other factors also affect actual speed.
               </p>
               <p>
-                وقتی که شما یک سرویس اشتراک اینترنت با سرعت 4 مگابیت بر ثانیه تهیه می‌کنید، نهایتاً در حین استفاده در هر
-                لحظه حداکثر با سرعت 4Mb می توانید فایلی را دانلود کنید. در طول مدت استفاده این سرعت نوسان دارد و ممکن
-                است
-                بسته به بار شبکه کمتر شود.
+                When you subscribe to an internet service with a speed of 4 megabits per second, you can theoretically
+                download a file at a maximum speed of 4Mb per second at any given moment. However, this speed fluctuates
+                over time and may decrease depending on the network load.
               </p>
 
               <div class="alert alert-info" role="alert">
                 <small>
-                  در سرویس های اینترنتی که خریداری می‌کنید، سرعت دانلود و آپلود یکسان نیستند و سرعت دانلود به طور قابل
-                  توجهی بیشتر از سرعت آپلود است. به این معنی که بخش اعظم پهنای باند برای دانلود (دریافت اطلاعات از
-                  اینترنت) اختصاص داده می شود و سهم کمتری به آپلود (ارسال اطلاعات به اینترنت) تعلق می گیرد. اکثر کاربران
-                  اینترنت، بیشتر از آپلود، به دانلود اطلاعات نیاز دارند. به عنوان مثال، تماشای فیلم، دانلود فایل، وبگردی
-                  و ... همگی جزو فعالیت های دانلود محسوب می شوند. در مقابل، آپلود معمولاً برای ارسال ایمیل، اشتراک گذاری
-                  فایل های کوچک و یا آپلود عکس در شبکه های اجتماعی استفاده می شود.
+                  In the internet services you purchase, download and upload speeds are not equal. Download speeds are
+                  significantly faster than upload speeds. This means that the majority of bandwidth is allocated to
+                  downloading (receiving data from the internet), with less bandwidth allocated to uploading (sending
+                  data to the internet).
+                  <br><br>
+                  Most internet users require more download than upload speed. For example,
+                  watching videos, downloading files, and browsing the web are all considered downloading activities. On
+                  the other hand, uploading is typically used for sending emails, sharing small files, and uploading
+                  photos to social media.
                 </small>
               </div>
 
@@ -547,17 +552,17 @@
             <hr class="divider">
 
             <section id="ch1_50">
-              <h2> کارت شبکه و مَک‌آدرس یا آدرس فیزیکی - MAC Address </h2>
+              <h2>MAC Address & Network Card</h2>
 
               <p>
-                کارت شبکه، که به آن NIC ( مخفف Network Interface Card) نیز می‌گویند، یک قطعه سخت‌افزاری است که به شما
-                امکان می‌دهد کامپیوتر یا گوشی خود را به شبکه (یا اینترنت) متصل کنید. دو نوع کارت شبکه عمده وجود دارد، بی
-                سیم و باسیم که در سایزهای مختلف برای کامپیوتر، موبایل و سایر دستگاه های قابل اتصال به شبکه عرضه می‌شود.
+                A network interface card (NIC) is a hardware component that allows you to connect your computer or
+                mobile device to a network (or the internet). There are two main types of NICs: wireless and wired,
+                which come in various sizes for computers, mobile phones, and other network-capable devices.
               </p>
-              <p>مک آدرس نشانی عددی است که به صورت سخت‌افزاری در کارت واسط شبکه در کارخانه حک شده‌است. این نوع آدرس‌دهی
-                موجب شناسایی منحصر به فرد کارت واسط شبکه در بین کارت‌ها می‌شود.
+              <p>A MAC address is a unique numerical identifier that is hardcoded into the network interface card at the
+                factory. This addressing scheme ensures that each network interface card has a distinct identity.
               </p>
-              <p>نمونه مک آدرس:</p>
+              <p>Example of a MAC address:</p>
               <code class="html hljs xml">
 				01:23:45:67:89:ab<br>
 				01-23-45-67-89-ab
@@ -566,9 +571,9 @@
 
               <div class="alert alert-info" role="alert">
                 <small>
-                  کارت شبکه، آدرس IP کامپیوتر یا موبایل شما را مدیریت می‌کند و به آن اجازه می‌دهد تا با سایر دستگاه‌های
-                  شبکه ارتباط برقرار کند. در برخی موارد مک آدرس شما به همراه سایر اطلاعات مثل آدرس IP جهت شناسایی
-                  استفاده می‌شود.
+                  A network card manages your computer or mobile device's IP address and allows it to communicate with
+                  other devices on the network. In some cases, your MAC address is used along with other information
+                  such as your IP address for identification purposes.
                 </small>
               </div>
 
@@ -576,22 +581,21 @@
                 <div class="card">
                   <div class="card-header" id="heading_ch1_50_01">
                     <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse"
-                        data-target="#collapse_ch1_50_01" aria-expanded="false" aria-controls="collapse_ch1_50_01">مک
-                        آدرس را چطور پیدا کنم؟</a> </h5>
+                        data-target="#collapse_ch1_50_01" aria-expanded="false" aria-controls="collapse_ch1_50_01">How
+                        can I find the MAC address?</a></h5>
                   </div>
                   <div id="collapse_ch1_50_01" class="collapse" aria-labelledby="heading_ch1_50_01"
                     data-parent="#accordionDefault">
                     <div class="card-body">
-                      با نگاه کردن به برد کارت شبکه یا از طریق نرم افزار می‌توان آن را پیدا کرد. <br>
-                      <b>در سیستم عامل ویندوز:</b><br>
-                      در نوار جستجوی ویندوز، "cmd" را تایپ کنید.<br>
-                      در نتایج جستجو، بر روی "Command Prompt" کلیک راست کنید و "Run as administrator" را انتخاب
-                      کنید.<br>
-                      در خط فرمان، دستور <code>ipconfig /all</code> را تایپ کنید و Enter را فشار دهید.<br>
-                      آدرس مک شما در کنار عبارت "Physical Address" یا "Ethernet Address" لیست خواهد شد.<br>
-                      <b>در اندروید</b><br>
-                      از طریق رفتن به بخش تنظیمات (Settings) و گزینه درباره گوشی (About Phone) و یافتن عبارت مد نظر از
-                      فهرست موارد نمایشی.
+                      It can be found either by looking at the network card or through software. <br>
+                      <b>In Windows OS:</b><br>
+                      "Type 'cmd' in the Windows search bar.<br>
+                      Right-click on 'Command Prompt' in the search results and select 'Run as administrator'.<br>
+                      In the command prompt, type <code>'ipconfig /all'</code> and press Enter.<br>
+                      Your MAC address will be listed next to 'Physical Address' or 'Ethernet Address'.<br>
+                      <b>In Android:</b><br>
+                      Go to Settings and then About phone and look for the desired information in the list of displayed
+                      items.
                     </div>
                   </div>
                 </div>
@@ -602,78 +606,65 @@
             <hr class="divider">
 
             <section id="ch1_55">
-              <h2>سِروِر - Server</h2>
+              <h2>Server</h2>
               <p>
-                فرض کنید به رستوران می‌روید. شما به عنوان مشتری، سفارش خود را به گارسون می‌دهید. گارسون سفارش شما را به
-                آشپزخانه می‌برد و پس از آماده شدن، غذا را به شما تحویل می‌دهد.
-
-                در دنیای دیجیتال هم، سرور نقشی مشابه گارسون را دارد. سرورها کامپیوترهای قدرتمندی هستند که در شبکه‌های
-                کامپیوتری قرار دارند و وظیفه‌شان ارائه خدمات به سایر کامپیوترها و دستگاه‌ها است.
+                Imagine you go to a restaurant. As a customer, you place your order with a waiter. The waiter takes your
+                order to the kitchen and, once it's ready, delivers the food to you. In the digital world, a server
+                plays a similar role. Servers are powerful computers that are part of computer networks and are
+                responsible for providing services to other computers and devices.
               </p>
               <p>
-                مثال:
+                For example:
                 <br>
-                وقتی شما در مرورگر وب خود، آدرس یک وب سایت را وارد می‌کنید، کامپیوتر شما درخواستی را به سرور <a
-                  href="#ch1_25">وب</a> سایت
-                ارسال می‌کند. سرور وب سایت، محتوای مورد نظر شما را از پایگاه داده خود پیدا می‌کند و آن را به کامپیوتر
-                شما ارسال می‌کند. در این مثال، سرور وب سایت مانند گارسونی عمل می‌کند که غذای شما را از آشپزخانه (پایگاه
-                داده) به شما (کامپیوتر) تحویل می‌دهد.
+
+                For example, when you enter a website address in your web browser, your computer sends a request to the
+                website's server. The <a href="#ch1_25">web</a> server finds the content you want from its database and
+                sends it to your computer. In this example, the web server acts like a waiter who delivers your food
+                (the content) from the kitchen (the database) to you (your computer).
               </p>
               <p>
-                انواع سرور:
+                Some types of servers:
                 <br>
-                <b>سرور وب:</b> برای میزبانی از وب سایت ها و ارائه آنها به کاربران در اینترنت استفاده می شود.<br>
-                <b>سرور ایمیل:</b> برای ارسال و دریافت ایمیل استفاده می شود.<br>
-                <b>سرور پایگاه داده:</b> برای ذخیره و مدیریت داده ها استفاده می شود.<br>
-                <b>سرور فایل:</b> برای ذخیره و به اشتراک گذاری فایل ها استفاده می شود.<br>
-                <b>سرور چاپ:</b> برای مدیریت و کنترل چاپگرها استفاده می شود.
+                <b>Web server:</b> Used to host websites and deliver them to users on the internet.<br>
+                <b>Email server:</b> Used to send and receive emails.<br>
+                <b>Database server:</b> Used to store and manage data.<br>
+                <b>File server:</b> Used to store and share files.<br>
+                <b>Print server:</b> Used to manage and control printers.
               </p>
-
-              <div class="alert alert-info" role="alert">
-                <small>
-                  یکی از دلایل شایع برای زمانی که در ادارات و بانک‌ها باعث می‌شود به شما بگویند سیستم قطع است این است که
-                  سیستم های آن اداره نمی‌توانند به سرور مد نظر متصل شوند.
-                </small>
-              </div>
 
             </section>
 
             <hr class="divider">
 
             <section id="ch1_60">
-              <h2>دفترچه تلفن اینترنت یا DNS - Domain Name System</h2>
+              <h2>DNS</h2>
               <p>
-                فرض کنید می‌خواهید با دوستتان که در شهر دیگری زندگی می‌کند تماس بگیرید. برای این کار، به دفترچه تلفن خود
-                مراجعه می‌کنید و شماره تلفن او را پیدا می‌کنید.
-
-                در دنیای اینترنت هم، DNS نقشی مشابه دفترچه تلفن را دارد. DNS مخفف Domain Name System است و سیستمی است که
-                نام‌های دامنه قابل خواندن توسط انسان (مانند www.digikala.com) را به آدرس‌های IP (مانند 142.250.189.142)
-                که توسط کامپیوترها قابل خواندن هستند، ترجمه می‌کند. حفظ کردن آدرس های آی پی برای ما انسانها سخت هست اما
-                تخصیص نام مثل digikala.com کار را ساده تر می کند.
+                Imagine you want to call a friend who lives in another city. You would look up their phone number in
+                your phonebook. In the world of the internet, DNS plays a similar role. DNS stands for Domain Name
+                System and is a system that translates human-readable domain names (like www.google.com) into IP
+                addresses (like 142.250.189.142) that computers can understand. It's much easier for us to remember
+                names like google.com than long strings of numbers.
               </p>
               <p>
                 مثال:
                 <br>
-                وقتی شما در مرورگر وب خود، آدرس "www.digikala.com" را وارد می‌کنید، کامپیوتر شما درخواستی را به سرور DNS
-                ارسال می‌کند. سرور DNS، آدرس IP مربوط به دیجیکالا را پیدا می‌کند و آن را به کامپیوتر یا گوشی شما ارسال
-                می‌کند. سپس، کامپیوتر شما با استفاده از این آدرس IP، به سرور وب سایت دیجیکالا متصل می‌شود و صفحه اصلی آن
-                را برای شما نمایش می‌دهد.
+                For example, when you type "www.digikala.com" into your web browser, your computer sends a request to a
+                DNS server. The DNS server finds the IP address associated with Digikala and sends it back to your
+                computer. Your computer then uses this IP address to connect to Digikala's web server and display the
+                homepage.
               </p>
               <p>
-                سرورهای DNS در سراسر جهان توزیع شده‌اند.
-                این امر به منظور توزیع بار ترافیک و اطمینان از دسترسی سریع به اطلاعات DNS در هر نقطه از جهان انجام
-                می‌شود.
-                اکثر ISPها (ارائه دهندگان خدمات اینترنت مثل ایرانسل یا شاتل) سرورهای DNS خود را دارند که به طور پیش فرض
-                برای کاربرانشان
-                تنظیم شده است.
-                همچنین می توانید از سرورهای DNS عمومی مانند Google Public DNS یا OpenDNS استفاده کنید.
+                DNS servers are distributed around the world. This is done to distribute traffic and ensure fast access
+                to DNS information from anywhere in the world. Most ISPs (Internet Service Providers) have their own DNS
+                servers that are configured by default for their users. You can also use public DNS servers like Google
+                Public DNS or OpenDNS.
               </p>
               <div class="alert alert-info" role="alert">
                 <small>
-                  سرور سایت مقصد می تواند تشخیص دهد که کاربر از چه موقعیت مکانی در حال اتصال است. این عمل با بررسی چند
-                  عامل از جمله آدرس IP و سرور DNS قابل تشخیص هست. بر همین اساس در کنار استفاده از VPN که آی پی را تغییر
-                  می‌دهد یکی دیکر از راه‌های دور زدن تحریم که بیشتر توسط علاقه‌مندان بازی‌های کامپیوتری استفاده می‌شود
-                  استفاده از سرورهای DNS مخصوص است.
+                  The destination site server can detect the user's geographic location. It does this by examining
+                  several factors, including the IP address and DNS server. Therefore, in addition to using a VPN to
+                  change the IP address, another way to bypass geo-restrictions, commonly used by gamers, is to use
+                  specialized DNS servers.
                 </small>
               </div>
             </section>
